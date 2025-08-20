@@ -1,74 +1,50 @@
-#!/usr/bin/env bash
-set -euo pipefail
-IFS=$'\n\t'
+#!/bin/bash
 
-# —— CẤU HÌNH REPO —— 
-# Bạn có thể tùy chỉnh các biến sau theo ý muốn
-REPO_DIR="${1:-/var/jb/var/mobile/RepoJailbreak}"
-ORIGIN="Romlayvn"
-LABEL="Kho lưu trữ các tinh chỉnh jailbreak"
-SUITE="stable"
-VERSION="1.0"
-CODENAME="ios"
-ARCHS="iphoneos-arm64 iphoneos-arm"
-COMPONENTS="main"
-DESCRIPTION="Kho lưu trữ các tweak iOS"
+# Đường dẫn đến repo
+REPO_DIR="/var/jb/var/mobile/RepoJailbreak"
+DEB_DIR="$REPO_DIR/debs"
 
-# —— Kiểm tra sự tồn tại của thư mục và debs/ —— 
-if [[ ! -d "$REPO_DIR/debs" ]]; then
-  echo "❌ Thư mục debs/ không tồn tại tại $REPO_DIR. Vui lòng tạo và thêm .deb vào đó."
-  exit 1
-fi
+# Tạo thư mục nếu chưa tồn tại
+mkdir -p $DEB_DIR
 
-# —— Chuyển vào thư mục repo —— 
-cd "$REPO_DIR"
+# Chuyển đến thư mục repo
+cd $REPO_DIR
 
-# —— Bước 1: Tạo Packages và nén Packages.gz —— 
-echo "› Tạo Packages…"
+# Xóa file Packages cũ
+rm -f Packages Packages.gz Packages.bz2 Release
+
+# Tạo file Packages mới
+echo "Tạo Packages..."
 dpkg-scanpackages -m ./debs > Packages
 
-echo "› Tạo Packages.gz…"
-gzip -f -k Packages
+# Nén file Packages
+echo "Tạo Packages.gz..."
+gzip -c9 Packages > Packages.gz
+bzip2 -c9 Packages > Packages.bz2
 
-# —— Bước 2: Tạo file Release —— 
-# Sử dụng ngày theo chuẩn RFC2822 để APT nhận đúng
-DATE="$(LC_ALL=C date '+%a, %d %b %Y %H:%M:%S %z')"
-
-cat > Release <<EOF
-Origin: $ORIGIN
-Label: $LABEL
-Suite: $SUITE
-Version: $VERSION
-Codename: $CODENAME
-Architectures: $ARCHS
-Components: $COMPONENTS
-Description: $DESCRIPTION
-Date: $DATE
-Acquire-By-Hash: no
+# Tạo file Release với các lệnh tương thích
+echo "Tạo file Release..."
+cat > Release << EOF
+Origin: RepoJailbreak
+Label: RepoJailbreak
+Suite: stable
+Version: 1.0
+Codename: ios
+Architectures: iphoneos-arm
+Components: main
+Description: Repo Jailbreak cá nhân
+MD5Sum:
+ $(md5sum Packages | cut -d' ' -f1) $(stat -f%z Packages) Packages
+ $(md5sum Packages.gz | cut -d' ' -f1) $(stat -f%z Packages.gz) Packages.gz
+ $(md5sum Packages.bz2 | cut -d' ' -f1) $(stat -f%z Packages.bz2) Packages.bz2
+SHA1:
+ $(sha1sum Packages | cut -d' ' -f1) $(stat -f%z Packages) Packages
+ $(sha1sum Packages.gz | cut -d' ' -f1) $(stat -f%z Packages.gz) Packages.gz
+ $(sha1sum Packages.bz2 | cut -d' ' -f1) $(stat -f%z Packages.bz2) Packages.bz2
+SHA256:
+ $(sha256sum Packages | cut -d' ' -f1) $(stat -f%z Packages) Packages
+ $(sha256sum Packages.gz | cut -d' ' -f1) $(stat -f%z Packages.gz) Packages.gz
+ $(sha256sum Packages.bz2 | cut -d' ' -f1) $(stat -f%z Packages.bz2) Packages.bz2
 EOF
 
-# —— Bước 3: Thêm checksum vào Release —— 
-echo "› Tính toán checksum…"
-add_hashes() {
-  local algo=$1 header=$2
-  echo "$header:" >> Release
-  for file in Packages Packages.gz; do
-    local path="$REPO_DIR/$file"
-    local size=$(wc -c < "$path" | tr -d ' ')
-    local sum=$(openssl "$algo" -r "$path" | awk '{print $1}')
-    printf " %s %s %s\n" "$sum" "$size" "$file" >> Release
-  done
-}
-
-add_hashes md5 MD5Sum
-add_hashes sha1 SHA1
-add_hashes sha256 SHA256
-
-# —— Bước 4: Ký GPG (tùy chọn) —— 
-if command -v gpg >/dev/null 2>&1 && gpg --list-keys >/dev/null 2>&1; then
-  echo "› Ký InRelease và Release.gpg…"
-  gpg --batch --yes --clearsign -o InRelease Release
-  gpg --batch --yes -abs -o Release.gpg Release
-fi
-
-echo "✅ Đã cập nhật xong repo tại: $REPO_DIR"
+echo "👍️ Cập nhật xong repo tại: $REPO_DIR"
