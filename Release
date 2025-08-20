@@ -6,16 +6,16 @@ Codename: ios
 Architectures: iphoneos-arm64
 Components: main
 Description: Repo Jailbreak cá nhân
-Icon: https://romlayvn-0411.github.io/sileojb/icon.png
+Icon: https://romlayvn-0411.github.io/sileojb/CydiaIcon.png
 MD5Sum:
- 16a7c794077ca3e0b72776b01fb7b6e4 2876 Packages
- 1e2456961d19480599bf0189f8074397 835 Packages.gz
- 6d06ab65660bc7e7737dd3394f704a6a 1002 Packages.bz2
+ 47abd6cd333693766941ae44789d4b26 3465 Packages
+ c60b28f9d8177711711caae5d4bf19ff 1058 Packages.gz
+ 5e7e7450096bf8c4b1f4c04b05436e59 1284 Packages.bz2
 SHA1:
- f7a7081760b6d13ec76286ef2dccbe9bcef0c571 2876 Packages
- 238efaae702215858000b401a87620089ac8b042 835 Packages.gz
- d87c4283d861afcb8c595a7d9da3affa1f2a2abd 1002 Packages.bz2
+ 552e292b233d46e51d0a9ad266050c125943b89b 3465 Packages
+ 880fac5e5d1d72e6a24cf3bc53fd152373f6fa8f 1058 Packages.gz
+ 2587b435ec3467723c8cb3d0d742ca4b3a0bc5f8 1284 Packages.bz2
 SHA256:
- 36dfe0edbfce13a2020f98fb1d223b154dd05fb80f77f8b627252bc2b4080a47 2876 Packages
- 1ea20939ecb33c7d35d6483d392a89b016c6d14b1974803e4f2cb9a9da9cf673 835 Packages.gz
- 9af3b7119a348c110e55e56374f414497ac3a9458a7d4d1ac5ad895134a88d89 1002 Packages.bz2
+ 6973cae33eb4ec8a074331102574e58d42961a8c2d87da457adc0fe2110e917c 3465 Packages
+ c2fd1019c7cf108bb43f811809da72987c6869bd44bb09a5406c8f54330bb601 1058 Packages.gz
+ fbdd29a3f73969a67276ff6fa4b9c08dc959e3ef795012073c93face87d932f4 1284 Packages.bz2

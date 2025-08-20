@@ -74,3 +74,19 @@ Author: therealhoodboy
 Icon: https://raw.githubusercontent.com/therealhoodboy/coreux/7cef61c0b96f05e285d17d030f9135c4e951e420/assets/tweak-icons/cc26.png
 Name: CC26
 
+Package: com.romlayvn-0411.VHSquidGesturePro
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Maintainer: romlayvn-0411
+Depends: firmware (>= 13.0)
+Filename: ./debs/com.romlayvn-0411.VHSquidGesturePro_1.0.0_iphoneos-arm64.deb
+Size: 9620
+MD5sum: 247589fa54220153af3f6510a39f1cde
+SHA1: 7e4ced09f2a8b4c5e462ab5f2e020fd2962295ea
+SHA256: c888bd0dd17032d18f758db650a0306f090a1a905e1c3988e0a4e537e773f092
+Section: Tweaks
+Description: Gói việt hoá cho tweaks SquidGesturePro
+Author: romlayvn-0411
+Icon: https://romlayvn-0411.github.io/sileojb/icons/icon.png
+Name: Gói Việt Hoá SquidGesturePro
+
