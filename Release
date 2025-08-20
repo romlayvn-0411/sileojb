@@ -1,19 +1,11 @@
-Origin: Repo Jailbreak
-Label: jailbreak
+Origin: Romlayvn
+Label: Kho lưu trữ các tinh chỉnh jailbreak
 Suite: stable
 Version: 1.0
 Codename: ios
-Architectures: iphoneos-arm64
+Architectures: iphoneos-arm64 iphoneos-arm
 Components: main
 Description: Kho lưu trữ các tweak iOS
-Date: 
+Date: Wed Aug 20 09:06:10 +07 2025
 Acquire-By-Hash: no
 MD5Sum:
-  0 Packages
-  29 Packages.gz
-SHA1:
-  0 Packages
-  29 Packages.gz
-SHA256:
-  0 Packages
-  29 Packages.gz

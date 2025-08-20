@@ -17,7 +17,7 @@ dpkg-scanpackages -m "$REPO/debs" > "$REPO/Packages"
 gzip -f -k "$REPO/Packages"
 
 # Tạo Release
-DATE="$(LC_ALL=C date -Ru)"
+DATE="$(date)"
 cat > "$REPO/Release" <<EOF
 Origin: $ORIGIN
 Label: $LABEL
