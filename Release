@@ -6,14 +6,14 @@ Codename: ios
 Architectures: iphoneos-arm64 iphoneos-arm
 Components: main
 Description: Kho lưu trữ các tweak iOS
-Date: Wed, 20 Aug 2025 09:50:33 +0700
+Date: Wed, 20 Aug 2025 10:34:48 +0700
 Acquire-By-Hash: no
 MD5Sum:
-  2876 Packages
-  835 Packages.gz
+ 16a7c794077ca3e0b72776b01fb7b6e4 2876 Packages
+ 4117895bcd6f6811bb7415d91a4b4363 835 Packages.gz
 SHA1:
-  2876 Packages
-  835 Packages.gz
+ f7a7081760b6d13ec76286ef2dccbe9bcef0c571 2876 Packages
+ 9cca42db2be064279b512f397a80a8bcc69938a1 835 Packages.gz
 SHA256:
-  2876 Packages
-  835 Packages.gz
+ 36dfe0edbfce13a2020f98fb1d223b154dd05fb80f77f8b627252bc2b4080a47 2876 Packages
+ 36e7c44ecd98bec2f9e6f2041cc97a84f49315016ed1e1bbfd2582fdd2b8e328 835 Packages.gz
