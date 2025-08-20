@@ -33,6 +33,7 @@ Codename: ios
 Architectures: iphoneos-arm64
 Components: main
 Description: Repo Jailbreak cá nhân
+Icon: https://romlayvn-0411.github.io/sileojb/icon.png
 MD5Sum:
  $(md5sum Packages | cut -d' ' -f1) $(stat -f%z Packages) Packages
  $(md5sum Packages.gz | cut -d' ' -f1) $(stat -f%z Packages.gz) Packages.gz

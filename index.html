@@ -2,35 +2,68 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Repo Jailbreak của Tuấn</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repo Sileo | Nguồn Tweak</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+<!-- Favicon và icon cho repo -->
+<link rel="icon" href="icon.png" type="image/png">
+<meta property="og:image" content="icon.png">
+<meta name="twitter:image" content="icon.png">
 </head>
 <body>
-  <header>
-    <h1>📦 Repo Jailbreak</h1>
-    <p>Kho lưu trữ các tinh chỉnh iOS dành cho thiết bị đã jailbreak</p>
-  </header>
+  <div class="background-blobs">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
 
-  <main>
-    <section>
-      <h2>🧩 Hướng dẫn sử dụng</h2>
-      <ol>
-        <li>Mở Sileo hoặc Zebra</li>
-        <li>Vào Sources → Add</li>
-        <li>Nhập URL repo: <code>https://romlayvn-0411.github.io/sileojb/</code></li>
-        <li>Thưởng thức các tweak!</li>
-      </ol>
-    </section>
+  <div class="container">
+    <header>
+<div class="logo">
+  <i class="fas fa-cube"></i>
+</div>
+      <h1>Sileo Jailbreak</h1>
+      <p class="subtitle">Kho lưu trữ các tinh chỉnh iOS cao cấp dành cho thiết bị đã jailbreak. Cập nhật thường xuyên với các tweak mới nhất.</p>
+    </header>
 
-    <section>
-      <h2>📁 Gói hiện có</h2>
-      <p>Repo này chứa các tweak do Tuấn phát triển hoặc sưu tầm. Nội dung sẽ được cập nhật thường xuyên.</p>
-    </section>
-  </main>
+    <div class="main-content">
+      <div class="card">
+        <h2><i class="fas fa-book"></i> Hướng dẫn sử dụng</h2>
+        <ol>
+          <li>Mở Sileo hoặc Zebra trên thiết bị đã jailbreak</li>
+          <li>Vào mục Sources → Add Source</li>
+          <li>Khám phá và cài đặt các tweak thú vị!</li>
+        </ol>
+        
+        <div class="url-box">
+          <div class="url-text">https://romlayvn-0411.github.io/sileojb/</div>
+          <button class="copy-btn" id="copyUrl">
+            <i class="fas fa-copy"></i> Sao chép
+          </button>
+        </div>
+        
+        <button class="sileo-btn" id="sileoBtn">
+          <i class="fas fa-plus-circle"></i> Thêm vào Sileo
+        </button>
+      </div>
 
-  <footer>
-    <p>&copy; 2025 Romlayvn — RepoJailbreak</p>
-  </footer>
+
+    <footer>
+      <p>&copy; 2025 Romlayvn — Sileo Jailbreak.</p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-telegram"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </footer>
+  </div>
+
+  <div class="notification" id="notification">
+    URL đã được sao chép vào clipboard!
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

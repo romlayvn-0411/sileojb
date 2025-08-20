@@ -6,15 +6,16 @@ Codename: ios
 Architectures: iphoneos-arm64
 Components: main
 Description: Repo Jailbreak cá nhân
+Icon: https://romlayvn-0411.github.io/sileojb/icon.png
 MD5Sum:
  16a7c794077ca3e0b72776b01fb7b6e4 2876 Packages
- 38106fa55e446daf7f5200c1c4059a33 835 Packages.gz
+ 1e2456961d19480599bf0189f8074397 835 Packages.gz
  6d06ab65660bc7e7737dd3394f704a6a 1002 Packages.bz2
 SHA1:
  f7a7081760b6d13ec76286ef2dccbe9bcef0c571 2876 Packages
- d53cd889223ab35c70372e98b73523441d102137 835 Packages.gz
+ 238efaae702215858000b401a87620089ac8b042 835 Packages.gz
  d87c4283d861afcb8c595a7d9da3affa1f2a2abd 1002 Packages.bz2
 SHA256:
  36dfe0edbfce13a2020f98fb1d223b154dd05fb80f77f8b627252bc2b4080a47 2876 Packages
- 8ffb94b80ebc8b4c55f59d1f0d1a0ea65398581a74aa9f9685c9639e5f709cd8 835 Packages.gz
+ 1ea20939ecb33c7d35d6483d392a89b016c6d14b1974803e4f2cb9a9da9cf673 835 Packages.gz
  9af3b7119a348c110e55e56374f414497ac3a9458a7d4d1ac5ad895134a88d89 1002 Packages.bz2
