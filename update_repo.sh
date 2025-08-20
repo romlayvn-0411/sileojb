@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Đường dẫn đến repo
-REPO_DIR="/var/jb/var/mobile/RepoJailbreak"
+REPO_DIR="/var/jb/var/mobile/sileojb"
 DEB_DIR="$REPO_DIR/debs"
 
 # Tạo thư mục nếu chưa tồn tại
@@ -25,12 +25,12 @@ bzip2 -c9 Packages > Packages.bz2
 # Tạo file Release với các lệnh tương thích
 echo "Tạo file Release..."
 cat > Release << EOF
-Origin: RepoJailbreak
-Label: RepoJailbreak
+Origin: SileoJB
+Label: SileoJB
 Suite: stable
 Version: 1.0
 Codename: ios
-Architectures: iphoneos-arm
+Architectures: iphoneos-arm64
 Components: main
 Description: Repo Jailbreak cá nhân
 MD5Sum:

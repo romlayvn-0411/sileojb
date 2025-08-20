@@ -13,7 +13,7 @@
         { "class": "DepictionTableTextView", "title": "Tác giả", "text": "therealhoodboy" },
         {
           "class": "DepictionButtonView",
-          "action": "https://romlayvn-0411.github.io/RepoJailbreak/debs/com.cureux.cc26_0.4.9.9b_iphoneos-arm64.deb",
+          "action": "https://romlayvn-0411.github.io/sileojb/debs/com.cureux.cc26_0.4.9.9b_iphoneos-arm64.deb",
           "title": "📥 Tải file .deb"
         }
       ]
