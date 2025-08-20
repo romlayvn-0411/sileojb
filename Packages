@@ -1,0 +1,76 @@
+Package: com.cureux.cc26
+Version: 0.4.9.1b
+Architecture: iphoneos-arm64
+Maintainer: therealhoodboy
+Installed-Size: 204
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 16.0), firmware (< 18.0)
+Conflicts: com.dvntm.cc18
+Provides: com.cureux.cc26
+Filename: /var/jb/var/mobile/RepoJailbreak/debs/com.cureux.cc26_0.4.9.1b_iphoneos-arm64.deb
+Size: 15362
+MD5sum: 43e05841fb7d5d4b79d3bf1d1412a5d4
+SHA1: b1a6da97e581783788f612776e469ed7ec6565e4
+SHA256: 168fb5154cdb546c20c62d2f4aaf5051b76a7002f8af55049c9fb96e8ac1d42c
+Section: Tweaks
+Description: A sleek reimagination of Control Center
+Author: therealhoodboy
+Icon: https://raw.githubusercontent.com/therealhoodboy/coreux/7cef61c0b96f05e285d17d030f9135c4e951e420/assets/tweak-icons/cc26.png
+Name: CC26
+
+Package: com.cureux.cc26
+Version: 0.4.9.5b
+Architecture: iphoneos-arm64
+Maintainer: therealhoodboy
+Installed-Size: 220
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 13.0), firmware (<< 18.0)
+Conflicts: com.dvntm.cc18
+Provides: com.cureux.cc26
+Filename: /var/jb/var/mobile/RepoJailbreak/debs/com.cureux.cc26_0.4.9.5b_iphoneos-arm64.deb
+Size: 19914
+MD5sum: b2bacd6720c8912400c35b2514adf0ec
+SHA1: 9c8b72ded4362fcbe9ba9eb00d34a572d04e0564
+SHA256: 71b2606cf91fb9dd998deb78d4944a512f612e56beff45ebbbaa8045d6e95ba0
+Section: Tweaks
+Description: A sleek reimagination of Control Center
+Author: therealhoodboy
+Icon: https://raw.githubusercontent.com/therealhoodboy/coreux/7cef61c0b96f05e285d17d030f9135c4e951e420/assets/tweak-icons/cc26.png
+Name: CC26
+
+Package: com.cureux.cc26
+Version: 0.4.9.6b
+Architecture: iphoneos-arm64
+Maintainer: therealhoodboy
+Installed-Size: 220
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 13.0), firmware (<< 18.0)
+Conflicts: com.dvntm.cc18
+Provides: com.cureux.cc26
+Filename: /var/jb/var/mobile/RepoJailbreak/debs/com.cureux.cc26_0.4.9.6b_iphoneos-arm64.deb
+Size: 19854
+MD5sum: 5c53999a3cd2ae8d675af363a276425d
+SHA1: b3f381691f95be6ea4ba6530351c2b78c98e73c6
+SHA256: 5239c66e19bc87d7118e39907f2a0e29a1beb72790a332cdf346b58618cbab2b
+Section: Tweaks
+Description: A sleek reimagination of Control Center
+Author: therealhoodboy
+Icon: https://raw.githubusercontent.com/therealhoodboy/coreux/7cef61c0b96f05e285d17d030f9135c4e951e420/assets/tweak-icons/cc26.png
+Name: CC26
+
+Package: com.cureux.cc26
+Version: 0.4.9.9b
+Architecture: iphoneos-arm64
+Maintainer: therealhoodboy
+Installed-Size: 220
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 13.0), firmware (<< 18.0)
+Conflicts: com.dvntm.cc18
+Provides: com.cureux.cc26
+Filename: /var/jb/var/mobile/RepoJailbreak/debs/com.cureux.cc26_0.4.9.9b_iphoneos-arm64.deb
+Size: 23520
+MD5sum: 6a2a3147478202cddac4b012256a34db
+SHA1: b6c768ce4e8ae1245680ea1b13a5a469161b7c34
+SHA256: 623067fc505bb419fc3edb6400fcaa1f186f1937b7bcd0b46ad01037a8c56be8
+Section: Tweaks
+Description: A sleek reimagination of Control Center.
+Author: therealhoodboy
+Icon: https://raw.githubusercontent.com/therealhoodboy/coreux/7cef61c0b96f05e285d17d030f9135c4e951e420/assets/tweak-icons/cc26.png
+Name: CC26
+
