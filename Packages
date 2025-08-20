@@ -6,7 +6,7 @@ Installed-Size: 204
 Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 16.0), firmware (< 18.0)
 Conflicts: com.dvntm.cc18
 Provides: com.cureux.cc26
-Filename: /var/jb/var/mobile/RepoJailbreak/debs/com.cureux.cc26_0.4.9.1b_iphoneos-arm64.deb
+Filename: ./debs/com.cureux.cc26_0.4.9.1b_iphoneos-arm64.deb
 Size: 15362
 MD5sum: 43e05841fb7d5d4b79d3bf1d1412a5d4
 SHA1: b1a6da97e581783788f612776e469ed7ec6565e4
@@ -25,7 +25,7 @@ Installed-Size: 220
 Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 13.0), firmware (<< 18.0)
 Conflicts: com.dvntm.cc18
 Provides: com.cureux.cc26
-Filename: /var/jb/var/mobile/RepoJailbreak/debs/com.cureux.cc26_0.4.9.5b_iphoneos-arm64.deb
+Filename: ./debs/com.cureux.cc26_0.4.9.5b_iphoneos-arm64.deb
 Size: 19914
 MD5sum: b2bacd6720c8912400c35b2514adf0ec
 SHA1: 9c8b72ded4362fcbe9ba9eb00d34a572d04e0564
@@ -44,7 +44,7 @@ Installed-Size: 220
 Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 13.0), firmware (<< 18.0)
 Conflicts: com.dvntm.cc18
 Provides: com.cureux.cc26
-Filename: /var/jb/var/mobile/RepoJailbreak/debs/com.cureux.cc26_0.4.9.6b_iphoneos-arm64.deb
+Filename: ./debs/com.cureux.cc26_0.4.9.6b_iphoneos-arm64.deb
 Size: 19854
 MD5sum: 5c53999a3cd2ae8d675af363a276425d
 SHA1: b3f381691f95be6ea4ba6530351c2b78c98e73c6
@@ -63,7 +63,7 @@ Installed-Size: 220
 Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 13.0), firmware (<< 18.0)
 Conflicts: com.dvntm.cc18
 Provides: com.cureux.cc26
-Filename: /var/jb/var/mobile/RepoJailbreak/debs/com.cureux.cc26_0.4.9.9b_iphoneos-arm64.deb
+Filename: ./debs/com.cureux.cc26_0.4.9.9b_iphoneos-arm64.deb
 Size: 23520
 MD5sum: 6a2a3147478202cddac4b012256a34db
 SHA1: b6c768ce4e8ae1245680ea1b13a5a469161b7c34
