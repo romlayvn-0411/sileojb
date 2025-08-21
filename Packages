@@ -134,13 +134,14 @@ Architecture: iphoneos-arm64
 Maintainer: romlayvn-0411
 Depends: firmware (>= 13.0)
 Filename: ./debs/com.romlayvn-0411.VHSquidGesturePro_1.0.1_iphoneos-arm64.deb
-Size: 9700
-MD5sum: a67876e3ed717e79bd24928e0dcec85b
-SHA1: c680c017f3609223e7433cb1ba088fe39d865469
-SHA256: 4bd007d5097b842e5fbcb64f55555dbfee5db2a0e68fc0ef9269ec4790043aec
+Size: 9724
+MD5sum: 8d97a5bdfad076c608bdb98f14a26c5b
+SHA1: 2d7071155392c6ccf7eab2a10d1c05333300775b
+SHA256: 41060141f6bb32e1ec34bc5890ded400d1b812d12422b77bc06546661626b049
 Section: Tweaks
 Description: Gói việt hoá cho tweaks SquidGesturePro
 Author: romlayvn-0411
+Depiction: https://romlayvn-0411.github.io/depictions/VHSquidGesturePro.json
 Icon: https://romlayvn-0411.github.io/sileojb/icons/icon.png
 Name: Gói Việt Hoá SquidGesturePro
 
