@@ -18,6 +18,25 @@ Icon: https://raw.githubusercontent.com/therealhoodboy/coreux/7cef61c0b96f05e285
 Name: CC26
 
 Package: com.cureux.cc26
+Version: 0.4.9.3b
+Architecture: iphoneos-arm64
+Maintainer: therealhoodboy
+Installed-Size: 204
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 13.0), firmware (<< 18.0)
+Conflicts: com.dvntm.cc18
+Provides: com.cureux.cc26
+Filename: ./debs/com.cureux.cc26_0.4.9.3b_iphoneos-arm64.deb
+Size: 17950
+MD5sum: 67bf2ad056979097d72ebc7d1191374d
+SHA1: 48de0d3b48a83d7b01d7f696795b38ba8ce060b0
+SHA256: 5f5315e9c300ffc73e2b5eb4887d0f7350ef44ffc8ef2ce4f8d97cd60f99d719
+Section: Tweaks
+Description: A sleek reimagination of Control Center
+Author: therealhoodboy
+Icon: https://raw.githubusercontent.com/therealhoodboy/coreux/7cef61c0b96f05e285d17d030f9135c4e951e420/assets/tweak-icons/cc26.png
+Name: CC26
+
+Package: com.cureux.cc26
 Version: 0.4.9.5b
 Architecture: iphoneos-arm64
 Maintainer: therealhoodboy
@@ -56,6 +75,25 @@ Icon: https://raw.githubusercontent.com/therealhoodboy/coreux/7cef61c0b96f05e285
 Name: CC26
 
 Package: com.cureux.cc26
+Version: 0.4.9.7b
+Architecture: iphoneos-arm64
+Maintainer: therealhoodboy
+Installed-Size: 220
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 13.0), firmware (<< 18.0)
+Conflicts: com.dvntm.cc18
+Provides: com.cureux.cc26
+Filename: ./debs/com.cureux.cc26_0.4.9.7b_iphoneos-arm64.deb
+Size: 22622
+MD5sum: af51ee36c66ea0a2affc48abf60c1cc5
+SHA1: f622eeb7f260815101c4f26988caadecbeb48343
+SHA256: 30659df45fcf784bd2cd4c63a57b44620c75a307cc5396263154090c38b03722
+Section: Tweaks
+Description: A sleek reimagination of Control Center
+Author: therealhoodboy
+Icon: https://raw.githubusercontent.com/therealhoodboy/coreux/7cef61c0b96f05e285d17d030f9135c4e951e420/assets/tweak-icons/cc26.png
+Name: CC26
+
+Package: com.cureux.cc26
 Version: 0.4.9.9b
 Architecture: iphoneos-arm64
 Maintainer: therealhoodboy
@@ -84,6 +122,22 @@ Size: 9620
 MD5sum: 247589fa54220153af3f6510a39f1cde
 SHA1: 7e4ced09f2a8b4c5e462ab5f2e020fd2962295ea
 SHA256: c888bd0dd17032d18f758db650a0306f090a1a905e1c3988e0a4e537e773f092
+Section: Tweaks
+Description: Gói việt hoá cho tweaks SquidGesturePro
+Author: romlayvn-0411
+Icon: https://romlayvn-0411.github.io/sileojb/icons/icon.png
+Name: Gói Việt Hoá SquidGesturePro
+
+Package: com.romlayvn-0411.VHSquidGesturePro
+Version: 1.0.1
+Architecture: iphoneos-arm64
+Maintainer: romlayvn-0411
+Depends: firmware (>= 13.0)
+Filename: ./debs/com.romlayvn-0411.VHSquidGesturePro_1.0.1_iphoneos-arm64.deb
+Size: 9700
+MD5sum: a67876e3ed717e79bd24928e0dcec85b
+SHA1: c680c017f3609223e7433cb1ba088fe39d865469
+SHA256: 4bd007d5097b842e5fbcb64f55555dbfee5db2a0e68fc0ef9269ec4790043aec
 Section: Tweaks
 Description: Gói việt hoá cho tweaks SquidGesturePro
 Author: romlayvn-0411
