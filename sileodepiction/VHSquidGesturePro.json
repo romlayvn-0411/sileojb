@@ -1,5 +1,6 @@
 {
 "minVersion":"0.1",
+  "headerImage": "https://romlayvn-0411.github.io/sileojb/icons/header.png",
 "tabs":[
 {
 "tabname":"Chi tiết",
@@ -22,7 +23,7 @@
 "title":"Kênh Hỗ Trợ"
 },
 {
-"markdown":"[**Telegram**](https://t.me/romlayvnipa) - Hỗ trợ update gói\n\nㅤ\n\n",
+"markdown":"[**Telegram**](https://t.me/romlayvn) - Hỗ trợ update",
 "useSpacing":"true",
 "class":"DepictionMarkdownView"
 },
@@ -42,7 +43,7 @@
 {
 "class":"DepictionTableTextView",
 "title":"Thể loại",
-"text":"Gói VH"
+"text":"Gói"
 },
 {
 "class":"DepictionTableTextView",

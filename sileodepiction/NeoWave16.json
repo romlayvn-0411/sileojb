@@ -1,5 +1,6 @@
 {
 "minVersion":"0.1",
+  "headerImage": "https://romlayvn-0411.github.io/sileojb/icons/header.png",
 "tabs":[
 {
 "tabname":"Chi tiết",
@@ -10,7 +11,7 @@
 "title":"Giới thiệu"
 },
 {
-"markdown":"Siri thức dậy để hiển thị hoạt hình màu gradient!\n\nCác tính năng chính/\n • Hoạt hình viền sáng bốn đoạn\n • Cấu hình màu hoàn toàn có thể tùy chỉnh\n • Hỗ trợ điều chỉnh thời lượng hoạt hình",
+"markdown":"Siri thức dậy để hiển thị hoạt hình màu gradient!\n\nCác tính năng chính/\n• Hoạt hình viền sáng bốn đoạn\n• Cấu hình màu hoàn toàn có thể tùy chỉnh\n• Hỗ trợ điều chỉnh thời lượng hoạt hình",
 "useSpacing":"true",
 "class":"DepictionMarkdownView"
 },
@@ -22,7 +23,7 @@
 "title":"Kênh Hỗ Trợ"
 },
 {
-"markdown":"[**Telegram**](https://t.me/romlayvnipa) - Hỗ trợ update gói\n\nㅤ\n\n",
+"markdown":"[**Telegram**](https://t.me/romlayvn) - Hỗ trợ update.",
 "useSpacing":"true",
 "class":"DepictionMarkdownView"
 },
