@@ -6,17 +6,17 @@ Installed-Size: 152
 Depends: mobilesubstrate (>= 0.9.5000), firmware (< 18.0)
 Conflicts: com.dvntm.cc18
 Filename: ./debs/com.Axs.cc18s_0.0.3_iphoneos-arm64.deb
-Size: 4648
-MD5sum: 4d9a41ad69b2c3e4d950b185b7a8298e
-SHA1: ad7127372e2552230802bec610604eb170c764b4
-SHA256: 278cb4d315052533f59dd4b6cac6fc1e1a2c9d353449332359de1f817d905609
+Size: 4652
+MD5sum: ac0bd7a9ff1ad8af97976635b16e253c
+SHA1: a87cdcaf4f2b8248314d54dda375c726024d4fdd
+SHA256: 871aa2d299ee561d754285156e824a8f5fd318b28a674f3046d502430009df5e
 Section: Tweaks
 Description: Trung tâm điều khiển IOS 18
  * Sao chép mô -đun CC tròn, như trong iOS 18
 Author: dvntm
-Icon: https://romlayvn-0411.github.io/repo/icons/CC18s.png
+Icon: https://romlayvn-0411.github.io/sileojb/icons/CC18s.png
 Name: CC18s
-Sileodepiction: https://romlayvn-0411.github.io/repo/sileodepiction/cc18s.json
+Sileodepiction: https://romlayvn-0411.github.io/sileojb/sileodepiction/cc18s.json
 
 Package: com.cureux.cc26
 Version: 0.4.9.1b
@@ -155,13 +155,13 @@ Maintainer: romlayvn-0411
 Depends: firmware (>= 13.0)
 Filename: ./debs/com.romlayvn-0411.VHSquidGesturePro_1.0.1_iphoneos-arm64.deb
 Size: 9724
-MD5sum: 8d97a5bdfad076c608bdb98f14a26c5b
-SHA1: 2d7071155392c6ccf7eab2a10d1c05333300775b
-SHA256: 41060141f6bb32e1ec34bc5890ded400d1b812d12422b77bc06546661626b049
+MD5sum: 9fb6693f449f6a0b4528d5663dd23203
+SHA1: 6ef59b8a0cbc1b96563dd948d3287c9dafd43f6c
+SHA256: effc196bbe1d8b5e88369ef1ccaeafe274181b89d9419c4cc39d105d071feae8
 Section: Tweaks
 Description: Gói việt hoá cho tweaks SquidGesturePro
 Author: romlayvn-0411
-Depiction: https://romlayvn-0411.github.io/depictions/VHSquidGesturePro.json
+Depiction: https://romlayvn-0411.github.io/sileojb/sileodepiction/VHSquidGesturePro.json
 Icon: https://romlayvn-0411.github.io/sileojb/icons/icon.png
 Name: Gói Việt Hoá SquidGesturePro
 
@@ -172,15 +172,15 @@ Maintainer: SHTM
 Installed-Size: 8756
 Depends: mobilesubstrate (>= 0.9.5000)
 Filename: ./debs/com.shtm.neowave16_1.0.0_iphoneos-arm64.deb
-Size: 8311136
-MD5sum: 97f54cc24652fb9eb13b1eb6a3713f0d
-SHA1: e9e2c09ae220fe78c3ad99d719e92a0cf98b37f7
-SHA256: 71f2718f7b03ab8e9cfb2ea1b8777bd65140c770e3edb07607848b5f9268286a
+Size: 8311172
+MD5sum: b8120cfa881fb45e20c94d9ba43125b3
+SHA1: 63846344abd1628b13908f94fef2a1e6f23b5788
+SHA256: 400bb7ab7de7133d8e817a6e9155687ecb6a6223338631da400bd93641ac1be0
 Section: Tweaks
 Description: Hoạt ảnh chuyển màu cạnh màn hình đánh thức Siri
 Author: SHTM
 Depiction: https://orig.shtm.best/descriptions/com.shtm.neowave16/sileo.json
-Icon: https://orig.shtm.best/descriptions/com.shtm.neowave16/NeoWave16.png
+Icon: https://romlayvn-0411.github.io/sileojb/icons/NeoWave16.png
 Name: NeoWave16
-Sileodepiction: https://orig.shtm.best/descriptions/com.shtm.neowave16/sileo.json
+Sileodepiction: https://romlayvn-0411.github.io/sileojb/sileodepiction/NeoWave16.json
 

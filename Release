@@ -8,14 +8,14 @@ Components: main
 Description: Repo Jailbreak cá nhân
 Icon: https://romlayvn-0411.github.io/sileojb/CydiaIcon.png
 MD5Sum:
- 85c22c46484880b7aa78e570ca5ef522 7005 Packages
- 68986255bf5c5ab55fff8f11c7f67cb6 1897 Packages.gz
- 87620ec00cfecde2db2045809a3e7098 2167 Packages.bz2
+ 3b323e3be7d3ae7eddaa6b66f66b9a45 7018 Packages
+ 1d81713dd8041e4be89edf413fde5cb1 1883 Packages.gz
+ 5db7f5b15ae2ff29ac711a77a1fa376e 2157 Packages.bz2
 SHA1:
- f3d3ad1dde6685334aa43862e64973b4dcbbd1f8 7005 Packages
- 49f9a559d935dcda7b44ced8f58a4b6216bd4f54 1897 Packages.gz
- 4aa0f5242e64bbbbc7f50395298b0cb5f5480b96 2167 Packages.bz2
+ 86ddd2d203dd224d73e5daa26e73fb00c1a599c5 7018 Packages
+ 1756f54586ab7f9be261c96ed74a923d3e9baef8 1883 Packages.gz
+ 937f09fa7b88b2667abab0ed33283ac6cc0bc652 2157 Packages.bz2
 SHA256:
- 0e38fd22d9a5c2ce8f2fc52732fd074796b9ffae60a63fb86744f6383158223d 7005 Packages
- ca03ad32def59d7b5f8bffabd3809c24325a0cbb8017037265836c9ad9c5c950 1897 Packages.gz
- 03ec6f9218b893936e927455782f8c18b0202493bda49f386b5193df4279c8ac 2167 Packages.bz2
+ 5cac6682273f2b03c564ab9128c6d84607fd40ee027ad59203f698e40813c6e7 7018 Packages
+ e46470f83a85779b9a14ba9f634a16ed4e0e009b5ee7dfc16f7e7cda54dd13b1 1883 Packages.gz
+ a6e48cb1b2c21028d09c0d0354e5763dd45d0087f2c98be7190c5c916f3b0fbf 2157 Packages.bz2

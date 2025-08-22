@@ -10,7 +10,7 @@
 "title":"Giới thiệu"
 },
 {
-"markdown":"Thay đổi trung tâm điều khiển của bạn giống như iOS18",
+"markdown":"Siri thức dậy để hiển thị hoạt hình màu gradient!\n\nCác tính năng chính/\n • Hoạt hình viền sáng bốn đoạn\n • Cấu hình màu hoàn toàn có thể tùy chỉnh\n • Hỗ trợ điều chỉnh thời lượng hoạt hình",
 "useSpacing":"true",
 "class":"DepictionMarkdownView"
 },
@@ -36,9 +36,9 @@
 {
 "class":"DepictionTableTextView",
 "title":"Tác giả",
-"text":"romlayvn-0411"
+"text":"SHTM"
 },
-{ "class":"DepictionTableTextView", "title":"Phiên bản", "text":"0.0.3" },
+{ "class":"DepictionTableTextView", "title":"Phiên bản", "text":"1.0.0" },
 {
 "class":"DepictionTableTextView",
 "title":"Thể loại",
@@ -69,7 +69,7 @@
 "views":[
 {
 "class":"DepictionMarkdownView",
-"markdown":"### Phiên bản 0.0.3\n\n- Tuỳ biến ControlCenter iOS18"
+"markdown":"### Phiên bản 1.0.0\n\n- Thêm màu và tuỳ biến màu sắc hoạt ảnh cho Siri khi xuất hiện"
 },
 {
 "class":"DepictionLabelView",
