@@ -1,0 +1,86 @@
+{
+"minVersion":"0.1",
+"tabs":[
+{
+"tabname":"Chi tiết",
+"views":[
+{ "class":"DepictionHeaderView", "title":"" },
+{
+"class":"DepictionHeaderView",
+"title":"Giới thiệu"
+},
+{
+"markdown":"Thay đổi trung tâm điều khiển của bạn giống như iOS18",
+"useSpacing":"true",
+"class":"DepictionMarkdownView"
+},
+{
+"class":"DepictionSpacerView"
+},
+{
+"class":"DepictionHeaderView",
+"title":"Kênh Hỗ Trợ"
+},
+{
+"markdown":"[**Telegram**](https://t.me/romlayvnipa) - Hỗ trợ update gói\n\nㅤ\n\n",
+"useSpacing":"true",
+"class":"DepictionMarkdownView"
+},
+{
+"class":"DepictionSpacerView"
+},
+{
+"class":"DepictionHeaderView",
+"title":"Thông tin "
+},
+{
+"class":"DepictionTableTextView",
+"title":"Tác giả",
+"text":"romlayvn-0411"
+},
+{ "class":"DepictionTableTextView", "title":"Phiên bản", "text":"1.0.0" },
+{
+"class":"DepictionTableTextView",
+"title":"Thể loại",
+"text":"Tweaks"
+},
+{
+"class":"DepictionTableTextView",
+"title":"Ngày tải lên",
+"text":"22/8/2025"
+},
+{
+"class":"DepictionTableTextView",
+"title":"Khả năng tương thích",
+"text":"iOS 15.0 đến 16.5"
+},
+{
+"class":"DepictionLabelView",
+"text":"Copyright © 2025 by Romlayvn",
+"textColor":"#999999",
+"fontSize":"10.0",
+"alignment":1
+}
+],
+"class":"DepictionStackView"
+},
+{
+"tabname":"Nhật ký thay đổi",
+"views":[
+{
+"class":"DepictionMarkdownView",
+"markdown":"### Phiên bản 0.0.3\n\n- Tuỳ biến ControlCenter iOS18"
+},
+{
+"class":"DepictionLabelView",
+"text":"Copyright © 2025 by Romlayvn",
+"textColor":"#999999",
+"fontSize":"10.0",
+"alignment":1
+}
+],
+"class":"DepictionStackView"
+}
+],
+"class":"DepictionTabView"
+}

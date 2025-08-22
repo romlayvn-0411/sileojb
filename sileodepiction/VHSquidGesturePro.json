@@ -1,0 +1,86 @@
+{
+"minVersion":"0.1",
+"tabs":[
+{
+"tabname":"Chi tiết",
+"views":[
+{ "class":"DepictionHeaderView", "title":"" },
+{
+"class":"DepictionHeaderView",
+"title":"Giới thiệu"
+},
+{
+"markdown":"Thêm gói tiếng việt cho tinh chỉnh SquidGesturePro\n•Yêu cầu:\n - Cài đặt Tweak SquidGesturePro.\n- Kích hoạt Tweak để sử dụng.",
+"useSpacing":"true",
+"class":"DepictionMarkdownView"
+},
+{
+"class":"DepictionSpacerView"
+},
+{
+"class":"DepictionHeaderView",
+"title":"Kênh Hỗ Trợ"
+},
+{
+"markdown":"[**Telegram**](https://t.me/romlayvnipa) - Hỗ trợ update gói\n\nㅤ\n\n",
+"useSpacing":"true",
+"class":"DepictionMarkdownView"
+},
+{
+"class":"DepictionSpacerView"
+},
+{
+"class":"DepictionHeaderView",
+"title":"Thông tin "
+},
+{
+"class":"DepictionTableTextView",
+"title":"Tác giả",
+"text":"romlayvn-0411"
+},
+{ "class":"DepictionTableTextView", "title":"Phiên bản", "text":"1.0.0" },
+{
+"class":"DepictionTableTextView",
+"title":"Thể loại",
+"text":"Gói VH"
+},
+{
+"class":"DepictionTableTextView",
+"title":"Ngày tải lên",
+"text":"20/8/2025"
+},
+{
+"class":"DepictionTableTextView",
+"title":"Khả năng tương thích",
+"text":"iOS 14.0 đến 16.5"
+},
+{
+"class":"DepictionLabelView",
+"text":"Copyright © 2025 by Romlayvn",
+"textColor":"#999999",
+"fontSize":"10.0",
+"alignment":1
+}
+],
+"class":"DepictionStackView"
+},
+{
+"tabname":"Nhật ký thay đổi",
+"views":[
+{
+"class":"DepictionMarkdownView",
+"markdown":"### Phiên bản 1.0.0\n\n- Cập nhật gói tiếng việt.\n- Sẽ cập nhật thêm để biết rõ các tính năng với giao diện tiếng việt.\n\n### Phiên bản 1.0.1\n\n- Sửa lỗi ở một số vị trí."
+},
+{
+"class":"DepictionLabelView",
+"text":"Copyright © 2025 by Romlayvn",
+"textColor":"#999999",
+"fontSize":"10.0",
+"alignment":1
+}
+],
+"class":"DepictionStackView"
+}
+],
+"class":"DepictionTabView"
+}

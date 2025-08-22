@@ -1,3 +1,23 @@
+Package: com.Axs.cc18s
+Version: 0.0.3
+Architecture: iphoneos-arm64
+Maintainer: Axs
+Installed-Size: 152
+Depends: mobilesubstrate (>= 0.9.5000), firmware (< 18.0)
+Conflicts: com.dvntm.cc18
+Filename: ./debs/com.Axs.cc18s_0.0.3_iphoneos-arm64.deb
+Size: 4648
+MD5sum: 4d9a41ad69b2c3e4d950b185b7a8298e
+SHA1: ad7127372e2552230802bec610604eb170c764b4
+SHA256: 278cb4d315052533f59dd4b6cac6fc1e1a2c9d353449332359de1f817d905609
+Section: Tweaks
+Description: Trung tâm điều khiển IOS 18
+ * Sao chép mô -đun CC tròn, như trong iOS 18
+Author: dvntm
+Icon: https://romlayvn-0411.github.io/repo/icons/CC18s.png
+Name: CC18s
+Sileodepiction: https://romlayvn-0411.github.io/repo/sileodepiction/cc18s.json
+
 Package: com.cureux.cc26
 Version: 0.4.9.1b
 Architecture: iphoneos-arm64
@@ -144,4 +164,23 @@ Author: romlayvn-0411
 Depiction: https://romlayvn-0411.github.io/depictions/VHSquidGesturePro.json
 Icon: https://romlayvn-0411.github.io/sileojb/icons/icon.png
 Name: Gói Việt Hoá SquidGesturePro
+
+Package: com.shtm.neowave16
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Maintainer: SHTM
+Installed-Size: 8756
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: ./debs/com.shtm.neowave16_1.0.0_iphoneos-arm64.deb
+Size: 8311136
+MD5sum: 97f54cc24652fb9eb13b1eb6a3713f0d
+SHA1: e9e2c09ae220fe78c3ad99d719e92a0cf98b37f7
+SHA256: 71f2718f7b03ab8e9cfb2ea1b8777bd65140c770e3edb07607848b5f9268286a
+Section: Tweaks
+Description: Hoạt ảnh chuyển màu cạnh màn hình đánh thức Siri
+Author: SHTM
+Depiction: https://orig.shtm.best/descriptions/com.shtm.neowave16/sileo.json
+Icon: https://orig.shtm.best/descriptions/com.shtm.neowave16/NeoWave16.png
+Name: NeoWave16
+Sileodepiction: https://orig.shtm.best/descriptions/com.shtm.neowave16/sileo.json
 
