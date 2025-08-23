@@ -220,3 +220,84 @@ Icon: https://romlayvn-0411.github.io/sileojb/icons/NeoWave16.png
 Name: NeoWave16
 Sileodepiction: https://romlayvn-0411.github.io/sileojb/sileodepiction/NeoWave16.json
 
+Package: dev.theos.orion14
+Version: 1.0.2
+Architecture: iphoneos-arm64
+Maintainer: Theos Team <support@theos.dev>
+Installed-Size: 514
+Depends: firmware (>= 14.0), firmware (<< 18.0), mobilesubstrate (>= 0.9.5000)
+Provides: dev.theos.orion (= 1.0.2)
+Filename: ./debs/Orion Runtime (iOS 14 – 17)-1.0.2.deb
+Size: 93284
+MD5sum: fdb72c66bd6018058b57962d76546957
+SHA1: 724dd1f99f51c4082af6f604643b7ce613a21d11
+SHA256: 4fa4ff6f751166c76a12cc3e0fcf2e62bb0ee80e0dcea78b0d4e79de5131666c
+Section: System
+Description: Runtime for tweaks built using Orion and Swift
+Tag: role::developer, compatible_min::ios14.0
+Author: Theos Team <support@theos.dev>
+Depiction: https://chariz.com/get/orion-runtime14
+Icon: https://img.chariz.cloud/icon/orion-runtime14/icon@3x.png
+Name: Orion Runtime (iOS 14 – 17)
+
+Package: me.hans32.presets
+Version: 1.0
+Architecture: iphoneos-arm64
+Maintainer: Hans32
+Installed-Size: 1772
+Pre-Depends: system-cmds, shell-cmds, coreutils
+Depends: firmware(>=15.6)
+Filename: ./debs/me.hans32.presets_1.0_iphoneos-arm64.deb
+Size: 301752
+MD5sum: 306eadb1dadfcb9dbcccbe65a0d4a403
+SHA1: 8bedf92872714af8a6b912e66acdfd7b99aba62f
+SHA256: a7f4f547cb8979220e8283f494d6c1c88996b3c140397b917fbf9e38b168575c
+Section: Applications
+Description: Run shell from presets
+Author: Hans32
+Icon: https://romlayvn-0411.github.io/sileojb/icons/Presets.png
+Name: Presets
+Sileodepiction: https://romlayvn-0411.github.io/sileojb/sileodepiction/Presets.json
+
+Package: ws.hbang.alderis
+Version: 1.2.3
+Architecture: iphoneos-arm64
+Maintainer: HASHBANG Productions <support@hbang.ws>
+Installed-Size: 2463
+Depends: firmware (>= 12.0), firmware (>= 12.2) | org.swift.libswift (>= 5.0), uikittools
+Replaces: org.thebigboss.libcolorpicker, me.nepeta.libcolorpicker
+Provides: org.thebigboss.libcolorpicker (= 99.0), me.nepeta.libcolorpicker (= 99.0)
+Filename: ./debs/Alderis Color Picker-1.2.3.deb
+Size: 290546
+MD5sum: 3f9e6b11866f656255a80d57ddb7f258
+SHA1: 9f3243b042f64f1a36509be4c198148547148336
+SHA256: cdd1f47c08843bde9b0e34ec07697a29dcdd56f8493fe5503f8085e7c1d5fb76
+Section: Development
+Description: Color picker support library for tweaks
+Tag: role::developer, compatible_min::ios12.0
+Author: HASHBANG Productions <support@hbang.ws>
+Depiction: https://chariz.com/get/alderis
+Icon: https://img.chariz.cloud/icon/alderis/icon@3x.png
+Name: Alderis Color Picker
+Support: https://hashbang.productions/support/
+
+Package: ws.hbang.common
+Version: 2.0
+Architecture: iphoneos-arm64
+Maintainer: HASHBANG Productions <support@hbang.ws>
+Installed-Size: 3132
+Depends: firmware (>= 15.0)
+Filename: ./debs/Cephei Tweak Support-2.0.deb
+Size: 198906
+MD5sum: b41babea6af14166166ac70da0d472bb
+SHA1: d7703febee3eaea3b1319d18cff7c7d59a9af2ab
+SHA256: 67338fa3f52951d5cbb900e8582e15dfff5964104bf627643bfe3901cda69652
+Section: Development
+Description: Support library for tweaks
+Tag: role::developer, compatible_min::ios15.0
+Author: HASHBANG Productions <support@hbang.ws>
+Depiction: https://chariz.com/get/cephei
+Icon: https://img.chariz.cloud/icon/cephei/icon@3x.png
+Name: Cephei Tweak Support
+Support: https://hashbang.productions/support/
+

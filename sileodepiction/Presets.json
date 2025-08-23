@@ -1,6 +1,6 @@
 {
 "minVersion":"0.1",
-"headerImage": "https://romlayvn-0411.github.io/sileojb/icons/header.png",
+  "headerImage": "https://romlayvn-0411.github.io/sileojb/icons/header.png",
 "tabs":[
 {
 "tabname":"Chi tiết",
@@ -11,16 +11,12 @@
 "title":"Giới thiệu"
 },
 {
-"markdown":"Thay đổi trung tâm điều khiển của bạn giống như iOS18",
+"markdown":"Presets là một ứng dụng cho phép bạn chạy các lệnh shell khi đang di chuyển, đó là thiết kế nhỏ gọn cho phép bạn cuộn qua các cài đặt trước của mình. Nó có các tính năng đặc biệt như tổ chức màu, root (sudo, chạy dưới dạng root) chỉ báo, thư mục bắt đầu và nhiều hơn nữa!\n\n⚠ Vui lòng đọc khi chuyển sang phiên bản mới: một khi có phiên bản mới, bạn có thể phải xóa mọi thứ và đặt lại. Bạn không cần phải làm điều đó mọi lúc, chỉ khi bạn cảm thấy có lỗi.",
 "useSpacing":"true",
 "class":"DepictionMarkdownView"
 },
 {
 "class":"DepictionSpacerView"
-},
-{
-"class":"DepictionHeaderView",
-"title":"Kênh Hỗ Trợ"
 },
 {
 "class":"DepictionSpacerView"
@@ -32,9 +28,9 @@
 {
 "class":"DepictionTableTextView",
 "title":"Tác giả",
-"text":"romlayvn-0411"
+"text":"Han32"
 },
-{ "class":"DepictionTableTextView", "title":"Phiên bản", "text":"0.0.3" },
+{ "class":"DepictionTableTextView", "title":"Phiên bản", "text":"1.0.0" },
 {
 "class":"DepictionTableTextView",
 "title":"Thể loại",
@@ -43,12 +39,12 @@
 {
 "class":"DepictionTableTextView",
 "title":"Ngày tải lên",
-"text":"22/8/2025"
+"text":"23/8/2025"
 },
 {
 "class":"DepictionTableTextView",
 "title":"Khả năng tương thích",
-"text":"iOS 15.0 đến 16.5"
+"text":"iOS 15.6 đến 18.3.1"
 },
 {
 "class":"DepictionLabelView",
@@ -56,6 +52,10 @@
 "textColor":"#999999",
 "fontSize":"10.0",
 "alignment":1
+},
+{
+"class":"DepictionHeaderView",
+"title":"Kênh Hỗ Trợ"
 },
 {
 "markdown":"[**Telegram**](https://t.me/romlayvn) - Hỗ trợ update.",
@@ -70,7 +70,7 @@
 "views":[
 {
 "class":"DepictionMarkdownView",
-"markdown":"### Phiên bản 0.0.3\n\n- Tuỳ biến ControlCenter iOS18"
+"markdown":"### Phiên bản 1.0.1\n\n Sửa Lỗi trên Rootfull\n\n- Không thể chạy với root\n\n- Không thể chạy Presets\n\n### Phiên bản 1.0.0\n\n- Bản phát hành đầu tiên"
 },
 {
 "class":"DepictionLabelView",

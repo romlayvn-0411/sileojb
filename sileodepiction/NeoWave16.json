@@ -11,7 +11,7 @@
 "title":"Giới thiệu"
 },
 {
-"markdown":"Siri thức dậy để hiển thị hoạt hình màu gradient!\n\nCác tính năng chính/\n• Hoạt hình viền sáng bốn đoạn\n• Cấu hình màu hoàn toàn có thể tùy chỉnh\n• Hỗ trợ điều chỉnh thời lượng hoạt hình",
+"markdown":"Siri thức dậy để hiển thị hoạt hình màu gradient!\n\nCác tính năng chính:\n\n• Hoạt hình viền sáng bốn đoạn\n\n• Cấu hình màu hoàn toàn có thể tùy chỉnh\n\n• Hỗ trợ điều chỉnh thời lượng hoạt hình",
 "useSpacing":"true",
 "class":"DepictionMarkdownView"
 },
@@ -21,11 +21,6 @@
 {
 "class":"DepictionHeaderView",
 "title":"Kênh Hỗ Trợ"
-},
-{
-"markdown":"[**Telegram**](https://t.me/romlayvn) - Hỗ trợ update.",
-"useSpacing":"true",
-"class":"DepictionMarkdownView"
 },
 {
 "class":"DepictionSpacerView"
@@ -61,6 +56,11 @@
 "textColor":"#999999",
 "fontSize":"10.0",
 "alignment":1
+},
+{
+"markdown":"[**Telegram**](https://t.me/romlayvn) - Hỗ trợ update.",
+"useSpacing":"true",
+"class":"DepictionMarkdownView"
 }
 ],
 "class":"DepictionStackView"
