@@ -1,3 +1,109 @@
+/* Chế độ sáng/tối */
+:root {
+  --primary-bg: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  --card-bg: rgba(255, 255, 255, 0.08);
+  --text-color: #fff;
+  --accent: #64FFDA;
+  --blob1: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  --blob2: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  --blob3: linear-gradient(135deg, #ffecd2, #fcb69f);
+}
+
+body.light {
+  --primary-bg: linear-gradient(135deg, #e0eafc, #cfdef3);
+  --card-bg: rgba(255,255,255,0.95);
+  --text-color: #222;
+  --accent: #00BFA5;
+  --blob1: linear-gradient(135deg, #fffde4, #f7e8e1);
+  --blob2: linear-gradient(135deg, #e0eafc, #cfdef3);
+  --blob3: linear-gradient(135deg, #fcb69f, #e0eafc);
+}
+
+body {
+  background: var(--primary-bg);
+  color: var(--text-color);
+}
+
+.card, .personal-info-card, header, footer, .package-card {
+  background: var(--card-bg) !important;
+  color: var(--text-color) !important;
+  border: 1px solid rgba(100,255,218,0.1);
+}
+
+h2, .logo, .copy-btn, .sileo-btn, .personal-info-card a {
+  color: var(--accent);
+}
+
+#theme-toggle {
+  position: fixed;
+  top: 24px;
+  left: 24px;
+  right: auto;
+  z-index: 100;
+  background: var(--card-bg);
+  color: var(--accent);
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+#theme-lang-group {
+  position: fixed;
+  top: 24px;
+  left: 24px;
+  z-index: 101;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+}
+
+#theme-toggle, #lang-toggle {
+  margin: 0;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 98vw;
+    padding: 10px;
+  }
+}
+@media (max-width: 900px) {
+  .main-content {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .card, .personal-info-card {
+    padding: 18px;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 2px;
+  }
+  header, .card, .personal-info-card, footer {
+    padding: 10px;
+    border-radius: 12px;
+  }
+  #theme-toggle {
+    top: 8px;
+    left: 8px;
+    right: auto;
+    width: 38px;
+    height: 38px;
+    font-size: 1.1rem;
+  }
+  #theme-lang-group {
+    top: 8px;
+    left: 8px;
+    gap: 32px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -31,7 +137,7 @@ body {
 }
 
 .blob-1 {
-  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  background: var(--blob1);
   width: 500px;
   height: 500px;
   top: -100px;
@@ -39,7 +145,7 @@ body {
 }
 
 .blob-2 {
-  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  background: var(--blob2);
   width: 600px;
   height: 600px;
   bottom: -150px;
@@ -47,7 +153,7 @@ body {
 }
 
 .blob-3 {
-  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  background: var(--blob3);
   width: 400px;
   height: 400px;
   bottom: 50px;
@@ -157,26 +263,30 @@ code {
 }
 
 .url-box {
-  background: rgba(0, 0, 0, 0.2);
-  padding: 15px;
-  border-radius: 12px;
-  margin: 20px 0;
+  background: var(--card-bg) !important;
+  color: var(--text-color) !important;
+  border: 1.5px solid var(--accent);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  flex-wrap: wrap;
+  border-radius: 18px;
+  box-shadow: 0 2px 8px rgba(100,255,218,0.08);
+  padding: 15px 20px;
 }
 
 .url-text {
-  font-family: monospace;
-  word-break: break-all;
+  flex: 1 1 auto;
+  min-width: 180px;
   padding-right: 15px;
 }
 
 .copy-btn {
-  background: rgba(100, 255, 218, 0.2);
-  border: 1px solid #64FFDA;
-  color: #64FFDA;
+  flex-shrink: 0;
+  margin-left: 10px;
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  color: var(--text-color);
   padding: 8px 15px;
   border-radius: 8px;
   cursor: pointer;
@@ -185,15 +295,15 @@ code {
 }
 
 .copy-btn:hover {
-  background: rgba(100, 255, 218, 0.3);
+  opacity: 0.8;
 }
 
 .sileo-btn {
   display: block;
   width: 100%;
   padding: 16px;
-  background: linear-gradient(135deg, #64FFDA, #00BFA5);
-  color: #000;
+  background: var(--accent);
+  color: var(--text-color);
   border: none;
   border-radius: 12px;
   font-size: 1.2rem;
@@ -206,8 +316,7 @@ code {
 }
 
 .sileo-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 25px rgba(100, 255, 218, 0.5);
+  opacity: 0.8;
 }
 
 .sileo-btn i {
@@ -222,7 +331,8 @@ code {
 }
 
 .package-card {
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--card-bg) !important;
+  color: var(--text-color) !important;
   border-radius: 15px;
   padding: 20px;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -265,13 +375,33 @@ footer {
 }
 
 .social-links a {
-  color: #fff;
+  color: var(--accent);
   font-size: 1.5rem;
-  transition: color 0.3s ease;
+  width: 38px;
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--card-bg);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  transition: color 0.3s, background 0.3s, transform 0.2s, box-shadow 0.2s;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .social-links a:hover {
-  color: #64FFDA;
+  color: #fff;
+  background: var(--accent);
+  transform: scale(1.08);
+  box-shadow: 0 4px 16px rgba(100,255,218,0.18);
+  text-decoration: none;
+}
+
+#lang-icon {
+  font-style: normal;
+  font-size: 1.5rem;
 }
 
 .notification {
@@ -304,4 +434,64 @@ footer {
 
 .card:nth-child(2) {
   animation-delay: 0.2s;
+}
+
+/* Hiệu ứng động cho card, nút, và các phần tử chính */
+.card, .personal-info-card, header, footer, .package-card {
+  animation: fadeInUp 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#theme-toggle, #lang-toggle {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+#theme-toggle:hover, #lang-toggle:hover {
+  transform: scale(1.08) rotate(-8deg);
+  box-shadow: 0 4px 16px rgba(100,255,218,0.18);
+}
+.copy-btn, .sileo-btn {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.copy-btn:hover, .sileo-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px rgba(100,255,218,0.18);
+}
+
+/* Card thông tin cá nhân */
+
+.personal-info-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 30px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  margin-bottom: 32px;
+  text-align: left;
+}
+.personal-info-card h2 {
+  margin-bottom: 16px;
+  font-size: 1.3rem;
+  color: #64FFDA;
+}
+.personal-info-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+.personal-info-card li {
+  margin-bottom: 10px;
+  font-size: 1.08rem;
+}
+.personal-info-card a {
+  color: #64FFDA;
+  text-decoration: underline;
 }
