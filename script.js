@@ -2,7 +2,7 @@
 const copyBtn = document.getElementById('copyUrl');
 if (copyBtn) {
   copyBtn.addEventListener('click', function() {
-    const url = 'https://romlayvn-0411.github.io/sileojb/';
+    const url = copyBtn.getAttribute('data-url') || 'https://romlayvn-0411.github.io/sileojb/';
     navigator.clipboard.writeText(url).then(function() {
       showNotification(document.documentElement.lang === 'vi' ? 'URL đã được sao chép vào clipboard!' : 'URL has been copied to clipboard!');
     });
@@ -77,6 +77,10 @@ if (themeToggle) {
     themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
   }
 }
+// Đặt mặc định là dark mode
+if (!localStorage.getItem('theme')) {
+  document.body.classList.remove('light');
+}
 
 // Chuyển đổi ngôn ngữ
 const langToggle = document.getElementById('lang-toggle');
@@ -121,9 +125,20 @@ function setLanguage(lang) {
   document.querySelector('.sileo-btn').innerHTML = lang === 'vi'
     ? '<i class="fas fa-plus-circle"></i> Thêm vào Sileo'
     : '<i class="fas fa-plus-circle"></i> Add to Sileo';
-  document.querySelector('.copy-btn').innerHTML = lang === 'vi'
-    ? '<i class="fas fa-copy"></i> Sao chép'
-    : '<i class="fas fa-copy"></i> Copy';
+  // Update copy and sileo button labels/aria
+  const copyBtnEl = document.querySelector('.copy-btn');
+  const sileoBtnEl = document.querySelector('.sileo-btn');
+  if (copyBtnEl) {
+    const lbl = copyBtnEl.querySelector('.btn-label');
+    if (lbl) lbl.textContent = lang === 'vi' ? 'Sao chép' : 'Copy';
+    copyBtnEl.setAttribute('aria-label', lang === 'vi' ? 'Sao chép' : 'Copy');
+    copyBtnEl.setAttribute('title', lang === 'vi' ? 'Sao chép' : 'Copy');
+  }
+  if (sileoBtnEl) {
+    const lbl = sileoBtnEl.querySelector('.btn-label');
+    if (lbl) lbl.textContent = lang === 'vi' ? 'Thêm vào Sileo' : 'Add to Sileo';
+    sileoBtnEl.setAttribute('aria-label', lang === 'vi' ? 'Thêm vào Sileo' : 'Add to Sileo');
+  }
 }
 if (langToggle) {
   langToggle.addEventListener('click', () => {

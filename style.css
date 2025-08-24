@@ -281,7 +281,7 @@ code {
   padding-right: 15px;
 }
 
-.copy-btn {
+.copy-btn, .sileo-btn {
   flex-shrink: 0;
   margin-left: 10px;
   background: var(--accent);
@@ -292,7 +292,30 @@ code {
   cursor: pointer;
   transition: all 0.3s ease;
   flex-shrink: 0;
+  min-width: 110px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.copy-btn .btn-label, .sileo-btn .btn-label {
+  display: inline-block;
+  margin-left: 8px;
+  font-weight: 600;
+}
+
+/* hide labels on very small screens to keep icon-only compact */
+@media (max-width: 420px) {
+  .copy-btn .btn-label, .sileo-btn .btn-label { display: none; }
+}
+
+/* ensure icon and text align */
+.copy-btn i, .sileo-btn i { font-size: 1.05rem; }
+
+/* subtle color tweak for sileo primary */
+.sileo-btn { background: linear-gradient(180deg, rgba(100,255,218,0.15), rgba(100,255,218,0.06)); color: #001F1A; }
+.copy-btn { background: transparent; color: var(--accent-strong); border-color: var(--border-color); }
 
 .copy-btn:hover {
   opacity: 0.8;
@@ -495,3 +518,275 @@ footer {
   color: #64FFDA;
   text-decoration: underline;
 }
+
+.action-row {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+.copy-btn, .sileo-btn {
+  /* enforce inline-flex so both sit on the same row */
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-width: 120px;
+  height: 44px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-color) !important;
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+  color: var(--accent-strong);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.22);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+}
+
+/* Make the primary action slightly more prominent */
+.sileo-btn {
+  min-width: 140px;
+  background: linear-gradient(180deg, rgba(100,255,218,0.12), rgba(100,255,218,0.06));
+  color: #001F1A; /* dark text over light accent */
+  border-color: rgba(100,255,218,0.25) !important;
+}
+
+/* Force inline layout when inside .action-row (override any earlier full-width rule) */
+.action-row .sileo-btn,
+.action-row .copy-btn {
+  display: inline-flex !important;
+  width: auto !important;
+  margin-top: 0 !important;
+}
+
+/* Prefer no wrap on medium+ screens so both buttons stay on same row */
+@media (min-width: 520px) {
+  .action-row { flex-wrap: nowrap; }
+}
+
+/* Final action button polish: equal height, icon/label spacing, hover */
+.action-row .copy-btn,
+.action-row .sileo-btn {
+  height: 44px;
+  padding: 0 14px;
+  font-weight: 600;
+  border-radius: 12px;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 6px 18px rgba(2,8,10,0.16);
+  transition: transform 160ms ease, box-shadow 160ms ease, opacity 160ms ease;
+}
+
+.action-row .copy-btn i,
+.action-row .sileo-btn i {
+  font-size: 1.05rem;
+  line-height: 1;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.action-row .btn-label {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 6px;
+  font-size: 0.95rem;
+}
+
+.action-row .copy-btn:active,
+.action-row .sileo-btn:active { transform: translateY(1px) scale(0.997); }
+.action-row .copy-btn:focus,
+.action-row .sileo-btn:focus { box-shadow: 0 8px 22px rgba(2,8,10,0.2), 0 0 0 4px rgba(100,255,218,0.06); }
+
+.copy-btn {
+  background: transparent;
+  color: var(--accent-strong);
+}
+
+.copy-btn i, .sileo-btn i { margin-right: 8px; }
+
+.copy-btn:hover, .sileo-btn:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 14px 34px rgba(0,0,0,0.28);
+}
+
+/* Ensure small screens remain usable */
+@media (max-width: 520px) {
+  .action-row { gap: 8px; }
+  .copy-btn, .sileo-btn { min-width: 100px; height: 40px; padding: 7px 12px; font-size: 0.95rem; }
+  .sileo-btn { min-width: 110px; }
+}
+
+/* Accessibility: visible focus */
+.copy-btn:focus, .sileo-btn:focus {
+  outline: 3px solid rgba(100,255,218,0.16);
+  outline-offset: 2px;
+}
+
+/* === Liquid Glass (iOS 26-like) theme overrides === */
+/* Add after existing styles to override and provide glassy visuals */
+:root {
+  --glass-radius: 20px;
+  --glass-blur: 12px;
+  --glass-saturate: 140%;
+  --glass-bg: rgba(255,255,255,0.06);
+  --glass-border: rgba(255,255,255,0.12);
+  --glass-highlight: rgba(255,255,255,0.12);
+  --glass-shadow: rgba(2,6,23,0.45);
+  --accent-strong: #64FFDA;
+  --muted: rgba(255,255,255,0.65);
+}
+body.light {
+  --glass-bg: rgba(255,255,255,0.75);
+  --glass-border: rgba(0,0,0,0.06);
+  --glass-highlight: rgba(255,255,255,0.9);
+  --glass-shadow: rgba(2,6,23,0.08);
+  --accent-strong: #00796b;
+  --muted: rgba(0,0,0,0.7);
+}
+
+/* Global glass container look */
+.container, header, footer, .card, .personal-info-card, .package-card, .url-box {
+  position: relative;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  background-color: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--glass-radius);
+  box-shadow: 0 8px 30px var(--glass-shadow);
+  backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
+  overflow: hidden;
+}
+
+/* Sheen overlay for reflective liquid appearance */
+.card::before, header::before, footer::before, .personal-info-card::before, .url-box::before {
+  content: "";
+  position: absolute;
+  left: -10%;
+  top: -30%;
+  width: 120%;
+  height: 60%;
+  background: linear-gradient(120deg, rgba(255,255,255,0.12) 0%, rgba(255,255,255,0.02) 45%, rgba(255,255,255,0.0) 60%);
+  transform: rotate(-20deg);
+  opacity: 0.6;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+}
+
+/* Inner subtle rim highlight */
+.card::after, header::after, .personal-info-card::after, .url-box::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.02));
+  -webkit-mask: linear-gradient(#000, #000) content-box, linear-gradient(#000, #000);
+  mask: linear-gradient(#000, #000) content-box, linear-gradient(#000, #000);
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+/* Accent and text treatments */
+h1, h2 { color: var(--accent-strong); }
+body, p, li, a { color: var(--muted); }
+.logo { color: var(--accent-strong); text-shadow: none; }
+
+/* Buttons - glassy */
+.copy-btn, .sileo-btn, #theme-toggle, .social-links a {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255,255,255,0.08);
+  color: var(--accent-strong);
+  padding: 8px 14px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.35);
+  backdrop-filter: blur(8px) saturate(120%);
+}
+.copy-btn i, .sileo-btn i { margin-right: 8px; }
+.copy-btn:hover, .sileo-btn:hover, .social-links a:hover, #theme-toggle:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 12px 28px rgba(2,6,23,0.45);
+  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+}
+
+/* === Icon & Border harmonization === */
+:root {
+  --icon-size: 40px;
+  --icon-size-large: 48px;
+  --btn-radius: 12px;
+  --border-color: rgba(255,255,255,0.12);
+  --icon-bg: rgba(255,255,255,0.03);
+}
+body.light {
+  --border-color: rgba(0,0,0,0.08);
+  --icon-bg: rgba(0,0,0,0.03);
+}
+
+/* Base icon/button appearance used by social icons, theme/lang toggles */
+.icon-btn, .social-links a, #lang-toggle {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--icon-bg);
+  border: 1px solid var(--border-color);
+  color: var(--accent-strong);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+  transition: transform .18s ease, box-shadow .18s ease, background .18s ease, color .18s ease;
+  text-decoration: none;
+}
+
+/* Theme toggle slightly larger so it's prominent */
+#theme-toggle {
+  width: var(--icon-size-large);
+  height: var(--icon-size-large);
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Keep social icon sizing consistent and remove extra padding on anchors */
+.social-links a { padding: 0; }
+
+/* Ensure lang icon inside footer matches social style */
+#lang-icon { font-size: 1.1rem; line-height: 1; }
+
+/* Buttons (copy / sileo) share the same border color and radius for harmony */
+.copy-btn, .sileo-btn {
+  border: 1px solid var(--border-color) !important;
+  border-radius: var(--btn-radius) !important;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  color: var(--accent-strong);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+}
+
+/* Align action-row items vertically for exact baseline */
+.action-row { align-items: center; }
+
+/* Hover and focus polish */
+.icon-btn:hover, .social-links a:hover, #theme-toggle:hover, #lang-toggle:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.22);
+  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+}
+.copy-btn:hover, .sileo-btn:hover {
+  transform: translateY(-3px) scale(1.02);
+}
+
+.icon-btn:focus, .social-links a:focus, .copy-btn:focus, .sileo-btn:focus, #theme-toggle:focus {
+  outline: 3px solid rgba(100,255,218,0.14);
+  outline-offset: 2px;
+}
+
+/* Small screens: reduce icon sizes a bit to avoid crowding */
+@media (max-width: 480px) {
+  :root { --icon-size: 36px; }
+  #theme-toggle { width: 44px; height: 44px; }
+}
+
+/* end Liquid Glass overrides */

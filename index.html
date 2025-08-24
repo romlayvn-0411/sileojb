@@ -39,15 +39,16 @@
           <li>Vào mục Sources → Add Source</li>
           <li>Khám phá và cài đặt các tweak thú vị!</li>
         </ol>
-        <div class="url-box">
-          <div class="url-text">https://romlayvn-0411.github.io/sileojb/</div>
-          <button class="copy-btn" id="copyUrl">
-            <i class="fas fa-copy"></i> Sao chép
+        <div class="action-row">
+          <button class="copy-btn icon-btn" id="copyUrl" data-url="https://romlayvn-0411.github.io/sileojb/" aria-label="Sao chép" title="Sao chép">
+            <i class="fas fa-copy"></i>
+            <span class="btn-label">Sao chép</span>
+          </button>
+          <button class="sileo-btn" id="sileoBtn" aria-label="Thêm vào Sileo">
+            <i class="fas fa-plus-circle"></i>
+            <span class="btn-label">Thêm vào Sileo</span>
           </button>
         </div>
-        <button class="sileo-btn" id="sileoBtn">
-          <i class="fas fa-plus-circle"></i> Thêm vào Sileo
-        </button>
       </div>
 
 
@@ -62,10 +63,10 @@
       </div>
       
       <div class="social-links">
-        <a href="https://t.me/romlayvn"><i class="fab fa-telegram"></i></a>
-        <a href="https://github.com/romlayvn-0411"><i class="fab fa-github"></i></a>
-        <a href="https://x.com/romlayvn"><i class="fab fa-twitter"></i></a>
-        <a href="#" id="lang-toggle" aria-label="Chuyển ngôn ngữ" style="display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:var(--card-bg);color:var(--accent);border:none;font-size:1.5rem;box-shadow:0 2px 8px rgba(0,0,0,0.12);cursor:pointer;transition:background 0.3s, color 0.3s;margin-left:10px;">
+        <a class="icon-btn" href="https://t.me/romlayvn" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+        <a class="icon-btn" href="https://github.com/romlayvn-0411" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a class="icon-btn" href="https://x.com/romlayvn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a class="icon-btn" href="#" id="lang-toggle" aria-label="Chuyển ngôn ngữ">
           <i id="lang-icon">🇻🇳</i>
         </a>
       </div>
