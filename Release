@@ -1,21 +1,30 @@
 Origin: SileoJB
 Label: SileoJB
 Suite: stable
-Version: 1.0
 Codename: ios
+Version: 1.0
 Architectures: iphoneos-arm64
 Components: main
 Description: Repo Jailbreak cá nhân
-Icon: https://romlayvn-0411.github.io/sileojb/CydiaIcon.png
+
 MD5Sum:
- 4e5e665018727364c9c71827d7b054a6 11406 Packages
- 7703efc5605095e7a70a8afc168d6167 3221 Packages.gz
- 9d65ddc1491262a81794afdbd81e9196 3463 Packages.bz2
+ 65a5ff4d7d76b7755a76c95a111fe1a0 0 Packages
 SHA1:
- 08b7d3e0e774ad5ad92deb7818a9605a39f2f5dc 11406 Packages
- ba7c9075e53e3cbf7e4ef27241cb934d04e5c140 3221 Packages.gz
- 493cb6bb070b09a0a9ad3d49be285174a2ec2955 3463 Packages.bz2
+ 5a7f0c01d61ba17211601ab86cfffe4ee79a79c8 0 Packages
 SHA256:
- 0d333254ee154d9210ae4e6a6c77442f28eacb3cd7a0b74cddd6cc8d43ab6dab 11406 Packages
- 81a49aa7879a663fa143a859ed216ef138d2da4de98afc6828264a3614fe0ae3 3221 Packages.gz
- b62d94196d7f4651cac3ec26d04c172a57bc1c6e9e9f1cbc467c86b0050075dc 3463 Packages.bz2
+ 02cccb18cc4e3dcf7eb529857d9d243d38f4b6acc5f051fdd33839966b1459f0 0 Packages
+
+MD5Sum:
+ 8a9574cf02373f0ea5c59ab9310a327c 0 Packages.gz
+SHA1:
+ a7c9b4aca2a0b5307787c4c940a1fae20e5d4282 0 Packages.gz
+SHA256:
+ d6e3854b0586cd08eca83a571cd25710a8337667eaf4d7fc2873ccb83e4293a8 0 Packages.gz
+
+MD5Sum:
+ 15d8301b7e50d6cbe2ba35d44cd85370 0 Packages.bz2
+SHA1:
+ 00197f0881e81562b23891fbe7defb6934b1e025 0 Packages.bz2
+SHA256:
+ 095b6e37a5dec39079cfb7ef3d228b74a6364e8dc130e10a87a9f73446c73718 0 Packages.bz2
+

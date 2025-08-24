@@ -1,0 +1,88 @@
+{
+"minVersion":"0.1",
+  "headerImage": "https://romlayvn-0411.github.io/sileojb/icons/header.png",
+"tabs":[
+{
+"tabname":"Chi tiết",
+"views":[
+{ "class":"DepictionHeaderView", "title":"" },
+{
+"class":"DepictionHeaderView",
+"title":"Giới thiệu"
+},
+{
+"markdown":"Tinh chỉnh TỐT NHẤT hiển thị chỉ báo trực quan cho các tương tác cảm ứng trên màn hình.\n\nHoạt ảnh\n\nBộ chọn màu\n\nHỗ trợ đa điểm và iPad\n\nKhông bị trễ hoặc chặn cảm ứng\n\nJailbreak Legacy, Rootless và Roothide\n\nLuôn hiển thị tương tác hoặc chỉ hiển thị trong khi quay màn hình.\n\nHỗ trợ CC\n\nKhả năng tương thích\n\niOS 15 hoặc 16",
+"useSpacing":"true",
+"class":"DepictionMarkdownView"
+},
+{
+"class":"DepictionSpacerView"
+},
+{
+"class":"DepictionSpacerView"
+},
+{
+"class":"DepictionHeaderView",
+"title":"Thông tin "
+},
+{
+"class":"DepictionTableTextView",
+"title":"Tác giả",
+"text":"Han32"
+},
+{ "class":"DepictionTableTextView", "title":"Phiên bản", "text":"1.0.0" },
+{
+"class":"DepictionTableTextView",
+"title":"Thể loại",
+"text":"Tweaks"
+},
+{
+"class":"DepictionTableTextView",
+"title":"Ngày tải lên",
+"text":"23/8/2025"
+},
+{
+"class":"DepictionTableTextView",
+"title":"Khả năng tương thích",
+"text":"iOS 15 hoặc iOS 16\n\nDopamine và Dopamine (RootHide)\n\nJailbreak của NathanLR\n\nHỖ TRỢ Serotonin",
+"userSpacing":"true"
+},
+{
+"class":"DepictionHeaderView",
+"title":"Kênh Hỗ Trợ"
+},
+{
+"markdown":"[**Telegram**](https://t.me/romlayvn) - Hỗ trợ update.",
+"useSpacing":"true",
+"class":"DepictionMarkdownView"
+},
+{
+"class":"DepictionLabelView",
+"text":"Copyright © 2025 by Romlayvn",
+"textColor":"#999999",
+"fontSize":"10.0",
+"alignment":1
+},
+],
+"class":"DepictionStackView"
+},
+{
+"tabname":"Nhật ký thay đổi",
+"views":[
+{
+"class":"DepictionMarkdownView",
+"markdown":"### Phiên bản 1.0.1\n\n Sửa Lỗi trên Rootfull\n\n- Không thể chạy với root\n\n- Không thể chạy Presets\n\n### Phiên bản 1.0.0\n\n- Bản phát hành đầu tiên"
+},
+{
+"class":"DepictionLabelView",
+"text":"Copyright © 2025 by Romlayvn",
+"textColor":"#999999",
+"fontSize":"10.0",
+"alignment":1
+}
+],
+"class":"DepictionStackView"
+}
+],
+"class":"DepictionTabView"
+}

@@ -1,3 +1,21 @@
+Package: com.82flex.touchvis
+Version: 4.0.1
+Architecture: iphoneos-arm64
+Maintainer: Lessica <82flex@gmail.com>
+Installed-Size: 4360
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Filename: debs/TouchViz.deb
+Size: 1047646
+MD5sum: e23cbd9c957abacb449e607c511371d2
+SHA1: 6b61907aad6e2656da5910f9083c8ba395f23534
+SHA256: aae484ca70ab65058d138814988a3eb10484ff9ca7d9c8193bfd453789d4287b
+Section: Tweaks
+Description: Display your touch interactions!
+Author: Lessica <82flex@gmail.com>
+Icon: https://romlayvn-0411.github.io/icons/touchviz.png
+Name: Touch-Viz
+Sileodepiction: https://romlayvn-0411.github.io/sileodepiction/TouchViz.json
+
 Package: com.Axs.cc18s
 Version: 0.0.3
 Architecture: iphoneos-arm64
@@ -5,7 +23,7 @@ Maintainer: Axs
 Installed-Size: 152
 Depends: mobilesubstrate (>= 0.9.5000), firmware (< 18.0)
 Conflicts: com.dvntm.cc18
-Filename: ./debs/com.Axs.cc18s_0.0.3_iphoneos-arm64.deb
+Filename: debs/com.Axs.cc18s_0.0.3_iphoneos-arm64.deb
 Size: 4652
 MD5sum: ac0bd7a9ff1ad8af97976635b16e253c
 SHA1: a87cdcaf4f2b8248314d54dda375c726024d4fdd
@@ -26,7 +44,7 @@ Installed-Size: 204
 Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 16.0), firmware (< 18.0)
 Conflicts: com.dvntm.cc18
 Provides: com.cureux.cc26
-Filename: ./debs/com.cureux.cc26_0.4.9.1b_iphoneos-arm64.deb
+Filename: debs/com.cureux.cc26_0.4.9.1b_iphoneos-arm64.deb
 Size: 15362
 MD5sum: 43e05841fb7d5d4b79d3bf1d1412a5d4
 SHA1: b1a6da97e581783788f612776e469ed7ec6565e4
@@ -45,7 +63,7 @@ Installed-Size: 204
 Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 13.0), firmware (<< 18.0)
 Conflicts: com.dvntm.cc18
 Provides: com.cureux.cc26
-Filename: ./debs/com.cureux.cc26_0.4.9.3b_iphoneos-arm64.deb
+Filename: debs/com.cureux.cc26_0.4.9.3b_iphoneos-arm64.deb
 Size: 17950
 MD5sum: 67bf2ad056979097d72ebc7d1191374d
 SHA1: 48de0d3b48a83d7b01d7f696795b38ba8ce060b0
@@ -64,7 +82,7 @@ Installed-Size: 220
 Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 13.0), firmware (<< 18.0)
 Conflicts: com.dvntm.cc18
 Provides: com.cureux.cc26
-Filename: ./debs/com.cureux.cc26_0.4.9.5b_iphoneos-arm64.deb
+Filename: debs/com.cureux.cc26_0.4.9.5b_iphoneos-arm64.deb
 Size: 19914
 MD5sum: b2bacd6720c8912400c35b2514adf0ec
 SHA1: 9c8b72ded4362fcbe9ba9eb00d34a572d04e0564
@@ -83,7 +101,7 @@ Installed-Size: 220
 Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 13.0), firmware (<< 18.0)
 Conflicts: com.dvntm.cc18
 Provides: com.cureux.cc26
-Filename: ./debs/com.cureux.cc26_0.4.9.6b_iphoneos-arm64.deb
+Filename: debs/com.cureux.cc26_0.4.9.6b_iphoneos-arm64.deb
 Size: 19854
 MD5sum: 5c53999a3cd2ae8d675af363a276425d
 SHA1: b3f381691f95be6ea4ba6530351c2b78c98e73c6
@@ -102,7 +120,7 @@ Installed-Size: 220
 Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 13.0), firmware (<< 18.0)
 Conflicts: com.dvntm.cc18
 Provides: com.cureux.cc26
-Filename: ./debs/com.cureux.cc26_0.4.9.7b_iphoneos-arm64.deb
+Filename: debs/com.cureux.cc26_0.4.9.7b_iphoneos-arm64.deb
 Size: 22622
 MD5sum: af51ee36c66ea0a2affc48abf60c1cc5
 SHA1: f622eeb7f260815101c4f26988caadecbeb48343
@@ -121,7 +139,7 @@ Installed-Size: 220
 Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 13.0), firmware (<< 18.0)
 Conflicts: com.dvntm.cc18
 Provides: com.cureux.cc26
-Filename: ./debs/com.cureux.cc26_0.4.9.9b_iphoneos-arm64.deb
+Filename: debs/com.cureux.cc26_0.4.9.9b_iphoneos-arm64.deb
 Size: 23520
 MD5sum: 6a2a3147478202cddac4b012256a34db
 SHA1: b6c768ce4e8ae1245680ea1b13a5a469161b7c34
@@ -138,7 +156,7 @@ Architecture: iphoneos-arm64
 Maintainer: raul saeed
 Installed-Size: 12952
 Depends: mobilesubstrate
-Filename: ./debs/com.raulsaeed.rxtiktok_1.3.2_iphoneos-arm64.deb
+Filename: debs/com.raulsaeed.rxtiktok_1.3.2_iphoneos-arm64.deb
 Size: 2627164
 MD5sum: bf1916b01243d296f94e7dccb22f0489
 SHA1: 70f331787bc0f5d04be063552b30eeb7de042068
@@ -156,7 +174,7 @@ Architecture: iphoneos-arm64
 Maintainer: raul saeed
 Installed-Size: 11544
 Depends: mobilesubstrate
-Filename: ./debs/com.raulsaeed.rxtiktok_1.4.5_iphoneos-arm64.deb
+Filename: debs/com.raulsaeed.rxtiktok_1.4.5_iphoneos-arm64.deb
 Size: 2505636
 MD5sum: 73febc17ca5813073ada1cf6fd24a372
 SHA1: 00595d143ab07bfa0043ec2a5f9825e5148f1677
@@ -173,7 +191,7 @@ Version: 1.0.0
 Architecture: iphoneos-arm64
 Maintainer: romlayvn-0411
 Depends: firmware (>= 13.0)
-Filename: ./debs/com.romlayvn-0411.VHSquidGesturePro_1.0.0_iphoneos-arm64.deb
+Filename: debs/com.romlayvn-0411.VHSquidGesturePro_1.0.0_iphoneos-arm64.deb
 Size: 9620
 MD5sum: 247589fa54220153af3f6510a39f1cde
 SHA1: 7e4ced09f2a8b4c5e462ab5f2e020fd2962295ea
@@ -189,7 +207,7 @@ Version: 1.0.1
 Architecture: iphoneos-arm64
 Maintainer: romlayvn-0411
 Depends: firmware (>= 13.0)
-Filename: ./debs/com.romlayvn-0411.VHSquidGesturePro_1.0.1_iphoneos-arm64.deb
+Filename: debs/com.romlayvn-0411.VHSquidGesturePro_1.0.1_iphoneos-arm64.deb
 Size: 9724
 MD5sum: 9fb6693f449f6a0b4528d5663dd23203
 SHA1: 6ef59b8a0cbc1b96563dd948d3287c9dafd43f6c
@@ -207,7 +225,7 @@ Architecture: iphoneos-arm64
 Maintainer: SHTM
 Installed-Size: 8756
 Depends: mobilesubstrate (>= 0.9.5000)
-Filename: ./debs/com.shtm.neowave16_1.0.0_iphoneos-arm64.deb
+Filename: debs/com.shtm.neowave16_1.0.0_iphoneos-arm64.deb
 Size: 8311172
 MD5sum: b8120cfa881fb45e20c94d9ba43125b3
 SHA1: 63846344abd1628b13908f94fef2a1e6f23b5788
@@ -227,7 +245,7 @@ Maintainer: Theos Team <support@theos.dev>
 Installed-Size: 514
 Depends: firmware (>= 14.0), firmware (<< 18.0), mobilesubstrate (>= 0.9.5000)
 Provides: dev.theos.orion (= 1.0.2)
-Filename: ./debs/Orion Runtime (iOS 14 – 17)-1.0.2.deb
+Filename: debs/Orion Runtime (iOS 14 – 17)-1.0.2.deb
 Size: 93284
 MD5sum: fdb72c66bd6018058b57962d76546957
 SHA1: 724dd1f99f51c4082af6f604643b7ce613a21d11
@@ -247,7 +265,7 @@ Maintainer: Hans32
 Installed-Size: 1772
 Pre-Depends: system-cmds, shell-cmds, coreutils
 Depends: firmware(>=15.6)
-Filename: ./debs/me.hans32.presets_1.0_iphoneos-arm64.deb
+Filename: debs/me.hans32.presets_1.0_iphoneos-arm64.deb
 Size: 301752
 MD5sum: 306eadb1dadfcb9dbcccbe65a0d4a403
 SHA1: 8bedf92872714af8a6b912e66acdfd7b99aba62f
@@ -267,7 +285,7 @@ Installed-Size: 2463
 Depends: firmware (>= 12.0), firmware (>= 12.2) | org.swift.libswift (>= 5.0), uikittools
 Replaces: org.thebigboss.libcolorpicker, me.nepeta.libcolorpicker
 Provides: org.thebigboss.libcolorpicker (= 99.0), me.nepeta.libcolorpicker (= 99.0)
-Filename: ./debs/Alderis Color Picker-1.2.3.deb
+Filename: debs/Alderis Color Picker-1.2.3.deb
 Size: 290546
 MD5sum: 3f9e6b11866f656255a80d57ddb7f258
 SHA1: 9f3243b042f64f1a36509be4c198148547148336
@@ -287,7 +305,7 @@ Architecture: iphoneos-arm64
 Maintainer: HASHBANG Productions <support@hbang.ws>
 Installed-Size: 3132
 Depends: firmware (>= 15.0)
-Filename: ./debs/Cephei Tweak Support-2.0.deb
+Filename: debs/Cephei Tweak Support-2.0.deb
 Size: 198906
 MD5sum: b41babea6af14166166ac70da0d472bb
 SHA1: d7703febee3eaea3b1319d18cff7c7d59a9af2ab

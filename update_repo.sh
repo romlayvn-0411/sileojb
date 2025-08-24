@@ -1,51 +1,57 @@
 #!/bin/bash
+#
+# update_repo.sh - Build repo Sileo/Cydia chuẩn
+#
 
-# Đường dẫn đến repo
-REPO_DIR="/var/jb/var/mobile/sileojb"
+# --- Đường dẫn repo ---
+REPO_DIR="$(pwd)"      # lấy thư mục hiện tại
 DEB_DIR="$REPO_DIR/debs"
 
-# Tạo thư mục nếu chưa tồn tại
-mkdir -p $DEB_DIR
+# --- Kiểm tra ---
+if [[ ! -d "$DEB_DIR" ]]; then
+    echo "❌ Không tìm thấy thư mục debs/. Hãy tạo: mkdir -p debs"
+    exit 1
+fi
 
-# Chuyển đến thư mục repo
-cd $REPO_DIR
+# --- Xóa file cũ ---
+rm -f "$REPO_DIR/Packages" "$REPO_DIR/Packages.gz" "$REPO_DIR/Packages.bz2" "$REPO_DIR/Release"
 
-# Xóa file Packages cũ
-rm -f Packages Packages.gz Packages.bz2 Release
+# --- Tạo Packages ---
+echo "📦 Đang quét file .deb trong debs/..."
+if [[ -z "$(ls -A "$DEB_DIR"/*.deb 2>/dev/null)" ]]; then
+    echo "❌ Không có file .deb trong debs/"
+    exit 1
+fi
 
-# Tạo file Packages mới
-echo "Tạo Packages..."
-dpkg-scanpackages -m ./debs > Packages
+dpkg-scanpackages -m debs > "$REPO_DIR/Packages"
+gzip -c9 "$REPO_DIR/Packages" > "$REPO_DIR/Packages.gz"
+bzip2 -c9 "$REPO_DIR/Packages" > "$REPO_DIR/Packages.bz2"
 
-# Nén file Packages
-echo "Tạo Packages.gz..."
-gzip -c9 Packages > Packages.gz
-bzip2 -c9 Packages > Packages.bz2
-
-# Tạo file Release với các lệnh tương thích
-echo "Tạo file Release..."
-cat > Release << EOF
+# --- Sinh Release ---
+echo "📝 Đang tạo Release..."
+cat > "$REPO_DIR/Release" <<EOF
 Origin: SileoJB
 Label: SileoJB
 Suite: stable
-Version: 1.0
 Codename: ios
+Version: 1.0
 Architectures: iphoneos-arm64
 Components: main
 Description: Repo Jailbreak cá nhân
-Icon: https://romlayvn-0411.github.io/sileojb/CydiaIcon.png
-MD5Sum:
- $(md5sum Packages | cut -d' ' -f1) $(stat -f%z Packages) Packages
- $(md5sum Packages.gz | cut -d' ' -f1) $(stat -f%z Packages.gz) Packages.gz
- $(md5sum Packages.bz2 | cut -d' ' -f1) $(stat -f%z Packages.bz2) Packages.bz2
-SHA1:
- $(sha1sum Packages | cut -d' ' -f1) $(stat -f%z Packages) Packages
- $(sha1sum Packages.gz | cut -d' ' -f1) $(stat -f%z Packages.gz) Packages.gz
- $(sha1sum Packages.bz2 | cut -d' ' -f1) $(stat -f%z Packages.bz2) Packages.bz2
-SHA256:
- $(sha256sum Packages | cut -d' ' -f1) $(stat -f%z Packages) Packages
- $(sha256sum Packages.gz | cut -d' ' -f1) $(stat -f%z Packages.gz) Packages.gz
- $(sha256sum Packages.bz2 | cut -d' ' -f1) $(stat -f%z Packages.bz2) Packages.bz2
 EOF
 
-echo "👍️ Cập nhật xong repo tại: $REPO_DIR"
+# --- Thêm checksum ---
+echo "" >> "$REPO_DIR/Release"
+for f in Packages Packages.gz Packages.bz2; do
+    [ -f "$REPO_DIR/$f" ] || continue
+    echo "MD5Sum:" >> "$REPO_DIR/Release"
+    md5sum "$REPO_DIR/$f" | awk '{printf " %s %d %s\n",$1,$2,"'$f'"}' >> "$REPO_DIR/Release"
+    echo "SHA1:" >> "$REPO_DIR/Release"
+    sha1sum "$REPO_DIR/$f" | awk '{printf " %s %d %s\n",$1,$2,"'$f'"}' >> "$REPO_DIR/Release"
+    echo "SHA256:" >> "$REPO_DIR/Release"
+    sha256sum "$REPO_DIR/$f" | awk '{printf " %s %d %s\n",$1,$2,"'$f'"}' >> "$REPO_DIR/Release"
+    echo "" >> "$REPO_DIR/Release"
+done
+
+echo "✅ Repo đã build xong trong: $REPO_DIR"
+
