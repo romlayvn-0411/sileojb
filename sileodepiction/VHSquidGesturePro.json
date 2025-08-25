@@ -11,22 +11,14 @@
 "title":"Giới thiệu"
 },
 {
-"markdown":"Thêm gói tiếng việt cho tinh chỉnh SquidGesturePro\n•Yêu cầu:\n - Cài đặt Tweak SquidGesturePro.\n- Kích hoạt Tweak để sử dụng.",
+"markdown":"Thêm gói tiếng việt cho tinh chỉnh SquidGesturePro\n•Yêu cầu:\n\n- Cài đặt Tweak SquidGesturePro.\n\n- Đây là tinh chỉnh trả phí cân nhắc trước khi cài đặt.",
 "useSpacing":"true",
 "class":"DepictionMarkdownView"
 },
 {
 "class":"DepictionSpacerView"
 },
-{
-"class":"DepictionHeaderView",
-"title":"Kênh Hỗ Trợ"
-},
-{
-"markdown":"[**Telegram**](https://t.me/romlayvn) - Hỗ trợ update",
-"useSpacing":"true",
-"class":"DepictionMarkdownView"
-},
+
 {
 "class":"DepictionSpacerView"
 },
@@ -39,7 +31,7 @@
 "title":"Tác giả",
 "text":"romlayvn-0411"
 },
-{ "class":"DepictionTableTextView", "title":"Phiên bản", "text":"1.0.0" },
+{ "class":"DepictionTableTextView", "title":"Phiên bản", "text":"1.0.1b" },
 {
 "class":"DepictionTableTextView",
 "title":"Thể loại",
@@ -48,12 +40,21 @@
 {
 "class":"DepictionTableTextView",
 "title":"Ngày tải lên",
-"text":"20/8/2025"
+"text":"25/8/2025"
 },
 {
 "class":"DepictionTableTextView",
 "title":"Khả năng tương thích",
 "text":"iOS 14.0 đến 16.5"
+},
+{
+"class":"DepictionHeaderView",
+"title":"Kênh Hỗ Trợ"
+},
+{
+"markdown":"[**Telegram**](https://t.me/romlayvn) - Hỗ trợ update",
+"useSpacing":"true",
+"class":"DepictionMarkdownView"
 },
 {
 "class":"DepictionLabelView",
@@ -70,7 +71,7 @@
 "views":[
 {
 "class":"DepictionMarkdownView",
-"markdown":"### Phiên bản 1.0.0\n\n- Cập nhật gói tiếng việt.\n- Sẽ cập nhật thêm để biết rõ các tính năng với giao diện tiếng việt.\n\n### Phiên bản 1.0.1\n\n- Sửa lỗi ở một số vị trí."
+"markdown":"### Phiên bản 1.0.1b\n\n- Sửa lại một số vị trí\n\n### Phiên bản 1.0.1\n\n- Sửa lại một số vị trí.\n\n### Phiên bản 1.0.0\n\n- Phát hành"
 },
 {
 "class":"DepictionLabelView",

@@ -219,6 +219,23 @@ Depiction: https://romlayvn-0411.github.io/sileojb/sileodepiction/VHSquidGesture
 Icon: https://romlayvn-0411.github.io/sileojb/icons/icon.png
 Name: Gói Việt Hoá SquidGesturePro
 
+Package: com.romlayvn-0411.VHSquidGesturePro
+Version: 1.0.1b
+Architecture: iphoneos-arm64
+Maintainer: romlayvn-0411
+Depends: firmware (>= 13.0)
+Filename: debs/com.romlayvn-0411.VHSquidGesturePro_1.0.1b_iphoneos-arm64.deb
+Size: 9736
+MD5sum: 3d9275d699ddc866a89d36f063fd3ee8
+SHA1: b91038b41517003eace41b81e5e6c80f42a5af4d
+SHA256: 6a03675f6d0138cdc49337e839f3d35c7806ee882a9b5874e912663d33cdf924
+Section: Tweaks
+Description: Gói việt hoá cho tweaks SquidGesturePro
+Author: romlayvn-0411
+Icon: https://romlayvn-0411.github.io/sileojb/icons/icon.png
+Name: Gói Việt Hoá SquidGesturePro
+Sileodepiction: https://romlayvn-0411.github.io/sileojb/sileodepiction/VHSquidGesturePro.json
+
 Package: com.shtm.neowave16
 Version: 1.0.0
 Architecture: iphoneos-arm64

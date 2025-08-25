@@ -11,7 +11,16 @@
 "title":"Giới thiệu"
 },
 {
-"markdown":"Tinh chỉnh TỐT NHẤT hiển thị chỉ báo trực quan cho các tương tác cảm ứng trên màn hình.\n\nHoạt ảnh\n\nBộ chọn màu\n\nHỗ trợ đa điểm và iPad\n\nKhông bị trễ hoặc chặn cảm ứng\n\nJailbreak Legacy, Rootless và Roothide\n\nLuôn hiển thị tương tác hoặc chỉ hiển thị trong khi quay màn hình.\n\nHỗ trợ CC\n\nKhả năng tương thích\n\niOS 15 hoặc 16",
+"markdown":"Tinh chỉnh TỐT NHẤT hiển thị chỉ báo trực quan cho các tương tác cảm ứng trên màn hình.\n\n•Hoạt ảnh\n\n•Bộ chọn màu\n\n•Hỗ trợ đa điểm và iPad\n\n•Không bị trễ hoặc chặn cảm ứng\n\n•Jailbreak Legacy, Rootless và Roothide\n\n•Luôn hiển thị tương tác hoặc chỉ hiển thị trong khi quay màn hình.\n\n•Hỗ trợ ControlCenter\n\n",
+"useSpacing":"true",
+"class":"DepictionMarkdownView"
+},
+{
+"class":"DepictionHeaderView",
+"title":"Hỗ Trợ Jailbreak và iOS"
+},
+{
+"markdown":"•iOS 15 hoặc iOS 16\n\n•Dopamine và Dopamine (RootHide)\n\n•Jailbreak của NathanLR\n\n•HỖ TRỢ Serotonin",
 "useSpacing":"true",
 "class":"DepictionMarkdownView"
 },
@@ -28,9 +37,9 @@
 {
 "class":"DepictionTableTextView",
 "title":"Tác giả",
-"text":"Han32"
+"text":"82flex"
 },
-{ "class":"DepictionTableTextView", "title":"Phiên bản", "text":"1.0.0" },
+{ "class":"DepictionTableTextView", "title":"Phiên bản", "text":"4.0.1" },
 {
 "class":"DepictionTableTextView",
 "title":"Thể loại",
@@ -39,13 +48,12 @@
 {
 "class":"DepictionTableTextView",
 "title":"Ngày tải lên",
-"text":"23/8/2025"
+"text":"25/8/2025"
 },
 {
 "class":"DepictionTableTextView",
 "title":"Khả năng tương thích",
-"text":"iOS 15 hoặc iOS 16\n\nDopamine và Dopamine (RootHide)\n\nJailbreak của NathanLR\n\nHỖ TRỢ Serotonin",
-"userSpacing":"true"
+"text":"iOS 15 - iOS 16"
 },
 {
 "class":"DepictionHeaderView",
@@ -71,7 +79,7 @@
 "views":[
 {
 "class":"DepictionMarkdownView",
-"markdown":"### Phiên bản 1.0.1\n\n Sửa Lỗi trên Rootfull\n\n- Không thể chạy với root\n\n- Không thể chạy Presets\n\n### Phiên bản 1.0.0\n\n- Bản phát hành đầu tiên"
+"markdown":"### Phiên bản 4.0.1\n\n-Đã sửa lỗi không thể thay thế hình ảnh trong một số trường hợp."
 },
 {
 "class":"DepictionLabelView",

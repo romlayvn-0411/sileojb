@@ -19,10 +19,6 @@
 "class":"DepictionSpacerView"
 },
 {
-"class":"DepictionHeaderView",
-"title":"Kênh Hỗ Trợ"
-},
-{
 "class":"DepictionSpacerView"
 },
 {
@@ -51,16 +47,20 @@
 "text":"iOS 15.0 đến 16.5"
 },
 {
-"class":"DepictionLabelView",
-"text":"Copyright © 2025 by Romlayvn",
-"textColor":"#999999",
-"fontSize":"10.0",
-"alignment":1
+"class":"DepictionHeaderView",
+"title":"Kênh Hỗ Trợ"
 },
 {
 "markdown":"[**Telegram**](https://t.me/romlayvn) - Hỗ trợ update.",
 "useSpacing":"true",
 "class":"DepictionMarkdownView"
+},
+{
+"class":"DepictionLabelView",
+"text":"Copyright © 2025 by Romlayvn",
+"textColor":"#999999",
+"fontSize":"10.0",
+"alignment":1
 }
 ],
 "class":"DepictionStackView"
