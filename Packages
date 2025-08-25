@@ -4,17 +4,17 @@ Architecture: iphoneos-arm64
 Maintainer: Lessica <82flex@gmail.com>
 Installed-Size: 4360
 Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
-Filename: debs/TouchViz.deb
-Size: 1047646
-MD5sum: e23cbd9c957abacb449e607c511371d2
-SHA1: 6b61907aad6e2656da5910f9083c8ba395f23534
-SHA256: aae484ca70ab65058d138814988a3eb10484ff9ca7d9c8193bfd453789d4287b
+Filename: debs/com.82flex.touchvis_4.0.1_iphoneos-arm64.deb
+Size: 916656
+MD5sum: f096ff3fd9a62bf7f1f84b6faaf916fe
+SHA1: 230a7cd5cfa9ec61708e6278e3b23c1543617ebf
+SHA256: 93a0d29fa4bcc26de78c7a4d869bb815af021eba34335ddd0107ee58fc14b167
 Section: Tweaks
-Description: Display your touch interactions!
+Description: Hiển thị các tương tác cảm ứng của bạn trên màn hình iphone!
 Author: Lessica <82flex@gmail.com>
-Icon: https://romlayvn-0411.github.io/icons/touchviz.png
+Icon: https://romlayvn-0411.github.io/sileojb/icons/touchviz.png
 Name: Touch-Viz
-Sileodepiction: https://romlayvn-0411.github.io/sileodepiction/TouchViz.json
+Sileodepiction: https://romlayvn-0411.github.io/sileojb/sileodepiction/TouchViz.json
 
 Package: com.Axs.cc18s
 Version: 0.0.3
