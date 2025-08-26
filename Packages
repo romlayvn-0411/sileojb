@@ -273,6 +273,42 @@ Icon: https://romlayvn-0411.github.io/sileojb/icons/icon.png
 Name: Gói Việt Hoá SquidGesturePro
 Sileodepiction: https://romlayvn-0411.github.io/sileojb/sileodepiction/VHSquidGesturePro.json
 
+Package: com.romlayvn-0411.horizontalsliders
+Version: 0.1.0
+Architecture: iphoneos-arm64
+Maintainer: romlayvn-0411
+Installed-Size: 172
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 13.0)
+Filename: debs/HorizontalSliders.deb
+Size: 10728
+MD5sum: e9e722e239d216ec8986469f1fd993c2
+SHA1: 0087b5c6e4b6f6854b9f12a05369d204d3cad014
+SHA256: 3726467d4979c99d9673915f5170b2eaca9a6047ee4991816152709b23ea242a
+Section: Tweaks
+Description: Làm cho module Âm thanh và Độ sáng của trung tâm điều khiển theo chiều ngang, trượt theo chiều ngang, không còn theo chiều dọc, một trình cắm nhỏ, rất tốt!
+Author: Nightwind
+Icon: https://romlayvn-0411.github.io/sileojb/icons/icon.png
+Name: HorizontalSliders
+Sileodepiction: https://romlayvn-0411.github.io/sileojb/sileodepiction/HorizontalSliders.json
+
+Package: com.romlayvn-0411.switchtheme3
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Maintainer: romlayvn-0411
+Installed-Size: 5520
+Depends: mobilesubstrate
+Filename: debs/com.romlayvn-0411.switchtheme3_1.0.0_iphoneos-arm64.deb
+Size: 47164
+MD5sum: 1bf37cd68f92c6b18c1dd9e0d71ef26f
+SHA1: cab13d213ab725c76ac870672edb68e5b5fb41b9
+SHA256: 9f5ff1c341ff13b016a5a74a66c61f3581968d5e3bdd5a4f25f4cdb3ed76b1ec
+Section: Tweaks
+Description: Đây là một công tắc động hoàn toàn mới, hoàn hảo với chủ đề WeChat, trải nghiệm hoạt hình mượt và sự đơn giản.
+Author: 白衣
+Icon: https://romlayvn-0411.github.io/sileojb/icons/switchtheme3.png
+Name: SwitchTheme-Line
+Sileodepiction: https://romlayvn-0411.github.io/sileojb/sileodepiction/switchtheme.json
+
 Package: com.shtm.neowave16
 Version: 1.0.0
 Architecture: iphoneos-arm64
