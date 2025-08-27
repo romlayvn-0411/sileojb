@@ -189,14 +189,14 @@ Sileodepiction: https://jtisvn.github.io/sileodepictions/PullOverpro.json
 
 Package: com.nightwind.horizontalsliders
 Version: 0.0.1
-Architecture: iphoneos-arm
+Architecture: iphoneos-arm64
 Maintainer: Nightwind
 Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 13.0)
-Filename: debs/com.nightwind.horizontalsliders_0.0.1_iphoneos-arm.deb
-Size: 10648
-MD5sum: f39eba389a98b55abacaf7e090c48a7a
-SHA1: 11322d36194f02f38a33ad3ab21e61357528a47e
-SHA256: 898650cf37a60e9536cdebe10b7a8eaa745d9de66f1ebad5c51006e2066cee35
+Filename: debs/com.nightwind.horizontalsliders_0.0.1_iphoneos-arm64.deb
+Size: 10652
+MD5sum: ca2d75188aa67a0885df66e8ac9df6e8
+SHA1: 11f65baaa03c9fb55e8516ee44111e326e9a32aa
+SHA256: 5bf40dedcc5e25bcf64031ee3ca7cb05a5c2a07e82b8a296b02e6601846effa7
 Section: Tweaks
 Description: Làm cho độ sáng của trung tâm điều khiển và thanh trượt âm lượng ngang.
 Author: Nightwind
