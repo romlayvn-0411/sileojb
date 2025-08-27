@@ -187,6 +187,23 @@ Icon: https://jtisvn.github.io/sectionIcons/PullOverPro.png
 Name: PullOver Pro (Rootless)
 Sileodepiction: https://jtisvn.github.io/sileodepictions/PullOverpro.json
 
+Package: com.nightwind.horizontalsliders
+Version: 0.0.1
+Architecture: iphoneos-arm
+Maintainer: Nightwind
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 13.0)
+Filename: debs/com.nightwind.horizontalsliders_0.0.1_iphoneos-arm.deb
+Size: 10648
+MD5sum: f39eba389a98b55abacaf7e090c48a7a
+SHA1: 11322d36194f02f38a33ad3ab21e61357528a47e
+SHA256: 898650cf37a60e9536cdebe10b7a8eaa745d9de66f1ebad5c51006e2066cee35
+Section: Tweaks
+Description: Làm cho độ sáng của trung tâm điều khiển và thanh trượt âm lượng ngang.
+Author: Nightwind
+Icon: https://romlayvn-0411.github.io/sileojb/sileodepiction/HorizontalSliders/Images/Icon.png
+Name: HorizontalSliders
+Sileodepiction: https://romlayvn-0411.github.io/sileojb/sileodepiction/HorizontalSliders/Images/HorizontalSliders.json
+
 Package: com.raulsaeed.rxtiktok
 Version: 1.3.2
 Architecture: iphoneos-arm64
