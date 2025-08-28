@@ -1,83 +1,10 @@
-// script.js
-const repoURL = "https://romlayvn-0411.github.io/sileojb/";
-
-// Chế độ sáng/tối
-function toggleDarkMode() {
-    document.body.classList.toggle('dark-mode');
-    
-    // Cập nhật icon
-    const icon = document.querySelector('.mode-toggle i');
-    if (document.body.classList.contains('dark-mode')) {
-        icon.className = 'fas fa-sun';
-    } else {
-        icon.className = 'fas fa-moon';
-    }
-}
-
-// Sao chép URL nguồn - Đã cập nhật để tương thích tốt hơn
-function copyRepoUrl() {
-    const textToCopy = document.getElementById('repoUrl').value;
-
-    // Ưu tiên sử dụng API Clipboard hiện đại
-    if (navigator.clipboard && window.isSecureContext) {
-        navigator.clipboard.writeText(textToCopy)
-            .then(() => {
-                alert('URL nguồn đã được sao chép!');
-            })
-            .catch(err => {
-                console.warn('Lỗi khi sao chép bằng API hiện đại, thử phương pháp cũ hơn: ', err);
-                fallbackCopyTextToClipboard(textToCopy);
-            });
-    } else {
-        // Sử dụng phương pháp dự phòng cho các trình duyệt cũ hoặc môi trường không an toàn (HTTP)
-        console.log('Sử dụng phương pháp sao chép dự phòng.');
-        fallbackCopyTextToClipboard(textToCopy);
-    }
-}
-
-// Hàm dự phòng để sao chép
-function fallbackCopyTextToClipboard(text) {
-    const textArea = document.createElement("textarea");
-    textArea.value = text;
-    
-    // Đảm bảo textarea không sichtbar trên màn hình
-    textArea.style.position = "fixed";
-    textArea.style.top = 0;
-    textArea.style.left = 0;
-    textArea.style.width = '2em';
-    textArea.style.height = '2em';
-    textArea.style.padding = 0;
-    textArea.style.border = 'none';
-    textArea.style.outline = 'none';
-    textArea.style.boxShadow = 'none';
-    textArea.style.background = 'transparent';
-
-    document.body.appendChild(textArea);
-    textArea.focus();
-    textArea.select();
-
-    try {
-        const successful = document.execCommand('copy');
-        if (successful) {
-            alert('URL nguồn đã được sao chép!');
-        } else {
-            alert('Sao chép thất bại. Vui lòng sao chép thủ công.');
-        }
-    } catch (err) {
-        console.error('Lỗi khi sao chép bằng phương pháp dự phòng: ', err);
-        alert('Sao chép thất bại. Vui lòng sao chép thủ công.');
-    }
-
-    document.body.removeChild(textArea);
-}
-
-
-// Thêm vào Sileo
-function addToSileo() {
-    window.location.href = `sileo://source/${repoURL}`;
-}
-
-// Thêm vào Zebra
-function addToZebra() {
-    window.location.href = `zbra://source/add/${repoURL}`;
-}
+const repoURL="https://romlayvn-0411.github.io/sileojb/";
+const toastEl=()=>document.getElementById('toast');
+const showToast=(m)=>{const e=toastEl();if(e){e.textContent=m;e.hidden=false;e.classList.add('show');clearTimeout(window.__sileo_toast);window.__sileo_toast=setTimeout(()=>{e.classList.remove('show');setTimeout(()=>e.hidden=true,300)},2200);return}const t=document.createElement('div');t.className='toast show';t.textContent=m;document.body.appendChild(t);setTimeout(()=>{t.classList.remove('show');setTimeout(()=>t.remove(),350)},2200)}
+const toggleDarkMode=()=>{const d=document.body.classList.toggle('dark-mode');const i=document.querySelector('.mode-toggle i');if(i)i.className=d?'fas fa-sun':'fas fa-moon';try{localStorage.setItem('sileojb-dark',d?'1':'0')}catch{}}
+document.addEventListener('DOMContentLoaded',()=>{try{if(localStorage.getItem('sileojb-dark')==='1'){document.body.classList.add('dark-mode');const i=document.querySelector('.mode-toggle i');if(i)i.className='fas fa-sun'}}catch{};const io=new IntersectionObserver((es,obs)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in-view','visible');obs.unobserve(e.target)}}),{threshold:.18});document.querySelectorAll('.card,.repo-input,header,.button-group').forEach(n=>io.observe(n))})
+function fallbackCopyTextToClipboard(text){const ta=document.createElement('textarea');ta.value=text;ta.style.position='fixed';ta.style.top=0;ta.style.left=0;ta.style.width='2em';ta.style.height='2em';ta.style.padding=0;ta.style.border='none';ta.style.outline='none';ta.style.boxShadow='none';ta.style.background='transparent';document.body.appendChild(ta);ta.focus();ta.select();try{const ok=document.execCommand('copy');showToast(ok?'URL nguồn đã được sao chép!':'Sao chép thất bại. Vui lòng sao chép thủ công.')}catch(e){console.error(e);showToast('Sao chép thất bại. Vui lòng sao chép thủ công.')}document.body.removeChild(ta)}
+const copyRepoUrl=()=>{const t=document.getElementById('repoUrl')?.value; if(!t)return showToast('Không có URL để sao chép'); if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t).then(()=>showToast('URL nguồn đã được sao chép!')).catch(()=>fallbackCopyTextToClipboard(t))}else fallbackCopyTextToClipboard(t)}
+const openDeep=(scheme)=>{window.location.href=scheme;setTimeout(()=>{if(!/iphone|ipad|ipod|android/i.test(navigator.userAgent))showToast(`${scheme.startsWith('sileo')?'Sileo':'Zebra'} chỉ hoạt động trên thiết bị di động. Sao chép URL và thêm thủ công.`)},600)}
+const addToSileo=()=>openDeep(`sileo://source/${encodeURIComponent(repoURL)}`);const addToZebra=()=>openDeep(`zbra://source/add/${encodeURIComponent(repoURL)}`)
+window.addEventListener('scroll',()=>{const h=document.querySelector('.hero');if(h)h.style.transform=`translateY(${Math.min(window.scrollY*0.08,18)}px)`})

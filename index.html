@@ -6,27 +6,34 @@
     <title>SileoJB - Kỷ Niệm Quốc Khánh 02/09</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <meta property="og:title" content="SileoJB - Kho Tinh Chỉnh iOS" />
+    <meta property="og:description" content="Kho lưu trữ Sileo: tải tweak cho iOS." />
+    <meta name="twitter:card" content="summary" />
 </head>
 <body>
     <div class="container">
         <header>
-            <p><span class="highlight-yellow animated-text">Cộng Hòa Xã hội Chủ Nghĩa Việt Nam</span></p>
-            <p class="slogan animated-text-delay">Độc Lập - Tự Do - Hạnh Phúc</p>
-            <h1><i class="fas fa-star"></i> SileoJB <i class="fas fa-star"></i></h1>
+            <h1><span class="highlight-yellow animated-text">Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam</span></h1>
+            <h2 class="slogan">Độc Lập - Tự Do - Hạnh Phúc</h2>
+            <h3 class="slogan">02/09/1945 - 02/09/2025</h3>
         </header>
 
         <div class="hero">
-            <div class="flag-container">
+            <div class="flag-container" aria-hidden="true">
                 <div class="vietnam-flag">
-                    <div class="star">★</div>
+                    <div class="star" aria-hidden="true">★</div>
                 </div>
             </div>
-            <div class="national-day">
-                <p>Kỉ Niệm 80 Năm</p>
-                02/09/1945 - 02/09/2025
 
+            <div class="national-day">
+                <p><i class="fas fa-star"></i> <span class="highlight-yellow animated-text">SileoJB</span> <i class="fas fa-star"></i></p>
+                Kỉ Niệm 80 Năm Quốc Khánh Việt Nam
+                
             </div>
-            
+
             <div class="bamboo-border"></div>
         </div>
 
@@ -51,20 +58,20 @@
             </div>
         </div>
 
-        <div class="repo-input">
+    <div class="repo-input">
             <h3><i class="fas fa-link"></i> URL Nguồn</h3>
             <div class="url-container">
                 <input type="text" class="url-input" id="repoUrl" value="https://romlayvn-0411.github.io/sileojb/" readonly>
-                <button class="url-copy" onclick="copyRepoUrl()"><i class="fas fa-copy"></i> Sao chép</button>
+        <button class="url-copy" onclick="copyRepoUrl()" aria-label="Sao chép URL nguồn"><i class="fas fa-copy"></i> Sao chép</button>
             </div>
             <p>Bạn có thể sao chép URL trên và thêm thủ công vào Sileo hoặc Zebra nếu các nút bên dưới không hoạt động.</p>
         </div>
 
         <div class="button-group">
-            <button class="button primary" onclick="addToSileo()">
+            <button class="button primary" onclick="addToSileo()" aria-label="Thêm vào Sileo">
                 <i class="fas fa-download"></i> Thêm vào Sileo
             </button>
-            <button class="button secondary" onclick="addToZebra()">
+            <button class="button secondary" onclick="addToZebra()" aria-label="Thêm vào Zebra">
                 <i class="fas fa-download"></i> Thêm vào Zebra
             </button>
         </div>
@@ -78,6 +85,9 @@
             </div>
         </footer>
     </div>
+
+    <!-- Toast container -->
+    <div id="toast" role="status" aria-live="polite" class="toast" hidden></div>
 
     <script src="script.js"></script>
 </body>
