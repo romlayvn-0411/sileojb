@@ -34,6 +34,38 @@ Icon: https://romlayvn-0411.github.io/sileojb/icons/touchviz.png
 Name: Touch-Viz
 Sileodepiction: https://romlayvn-0411.github.io/sileojb/sileodepiction/TouchViz.json
 
+Package: com.82flex.trollvnc
+Version: 1.1
+Architecture: iphoneos-arm64
+Maintainer: 82Flex <82flex@gmail.com>
+Installed-Size: 5152
+Depends: firmware (>= 14.0)
+Filename: debs/com.82flex.trollvnc_1.1_iphoneos-arm64.deb
+Size: 1412724
+MD5sum: 2b422ef879cf30f014f21f3f2035e679
+SHA1: e02237ee53cae2047f8a7e300aba92f79ab69c32
+SHA256: e3a02d665e1c438e457b5ef10ac902eacd7a63e6c440d337554d33bc66f76b3d
+Section: Networking
+Description: TrollVNC is a VNC server for iOS devices, allowing remote access and control of the device’s screen.
+Author: 82Flex <82flex@gmail.com>
+Name: TrollVNC
+
+Package: com.82flex.trollvnc
+Version: 1.2
+Architecture: iphoneos-arm64
+Maintainer: 82Flex <82flex@gmail.com>
+Installed-Size: 5152
+Depends: firmware (>= 14.0)
+Filename: debs/com.82flex.trollvnc_1.2_iphoneos-arm64.deb
+Size: 1412978
+MD5sum: 2094475553e974ec0aee0c91499efa82
+SHA1: 232f99f8f0c8b20ba455388ad84df608e9af560b
+SHA256: 48808058a613b65b7a2a088b28009a6de29368e63b9cbf83bc420f99fdcc22bb
+Section: Networking
+Description: TrollVNC is a VNC server for iOS devices, allowing remote access and control of the device’s screen.
+Author: 82Flex <82flex@gmail.com>
+Name: TrollVNC
+
 Package: com.Axs.cc18s
 Version: 0.0.3
 Architecture: iphoneos-arm64
@@ -1641,15 +1673,15 @@ Maintainer: Steph63 <https://x.com/steph63163?s=21>
 Depends: firmware (>= 14.0), firmware (<< 18.0), mobilesubstrate (>= 0.9.5000)
 Filename: debs/com.romlayvn-0411.LG_1.0.0_iphoneos-arm64.deb
 Size: 39879860
-MD5sum: 3fb335a1a4f9d10d8cfd03ed307e49b5
-SHA1: 26a239ff19929aeb4f00564d060cecf62e9ce270
-SHA256: d5e2d9addfa444510189bfe23b826b674ed2c5e70d5f5f78df7e8ad7bce641c7
+MD5sum: 957f73a133cd2f9663f911774b60005e
+SHA1: 5821b4dc7f08aecb46283dad67d41dd612c9b24c
+SHA256: 7641fcb9609bc56d64a1d98a11fbfc0f056a0afb5fd79b84ed1fc8a7c45f256c
 Section: Themes
-Description: Chủ đề iOS26\n• 269 icons\n• Mask
+Description: Chủ đề iOS26:269 icons + Mask
 Author: Steph63 <https://x.com/steph63163?s=21>
-Depiction: https://romlayvn-0411.github.io/sileojb/sileodepiction/LG.json
 Icon: https://romlayvn-0411.github.io/sileojb/icons/icon.png
 Name: LG Themes
+Sileodepiction: https://romlayvn-0411.github.io/sileojb/sileodepiction/LG.json
 
 Package: com.romlayvn-0411.VHSquidGesturePro
 Version: 1.0.0
