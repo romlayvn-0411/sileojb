@@ -1594,6 +1594,24 @@ Icon: https://romlayvn-0411.github.io/sileojb/icons/icon.png
 Name: HidePullOverPro
 Sileodepiction: https://romlayvn-0411.github.io/sileojb/sileodepiction/HidePulloverPro.json
 
+Package: com.mtac.vitreux
+Version: 1.0
+Architecture: iphoneos-arm64
+Maintainer: MTAC
+Installed-Size: 6112
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 16.0)
+Filename: debs/com.mtac.vitreux_1.0_iphoneos-arm64.deb
+Size: 5587044
+MD5sum: 9f11575822c2254a466d391ebdcfcddb
+SHA1: 21e0cbe72129b2ee0c970d7cf8c73f3fa1a2ad46
+SHA256: 920f41e2bd50576132260b907bc12cc967951d6dd912a7f8a3ae5dfdeaafffe4
+Section: Tweaks
+Description: A recreation of Liquid Glass
+Author: MTAC
+Icon: https://mtac.app/repo/assets/com.mtac.vitreux/icon-rounded.png
+Name: Vitreux
+Sileodepiction: https://romlayvn-0411.github.io/sileojb/sileodepiction/vitreux.json
+
 Package: com.netskao.pulloverpro
 Version: 2.1.6
 Architecture: iphoneos-arm64

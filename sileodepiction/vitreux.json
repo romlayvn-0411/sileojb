@@ -1,0 +1,92 @@
+{
+    "minVersion": "0.1",
+    "headerImage": "https://mtac.app/repo/assets/com.mtac.vitreux/banner.png",
+    "tintColor": "#00A8FF",
+    "tabs": [
+        {
+            "tabname": "Details",
+            "views": [
+                {
+                    "class": "DepictionScreenshotsView",
+                    "screenshots": [
+                        {
+                            "url": "https://mtac.app/repo/assets/com.mtac.vitreux/screenshot/1.png",
+                            "accessibilityText": "Screenshot"
+                        },{
+                            "url": "https://mtac.app/repo/assets/com.mtac.vitreux/screenshot/2.png",
+                            "accessibilityText": "Screenshot"
+                        },{
+                            "url": "https://mtac.app/repo/assets/com.mtac.vitreux/screenshot/3.png",
+                            "accessibilityText": "Screenshot"
+                        },{
+                            "url": "https://mtac.app/repo/assets/com.mtac.vitreux/screenshot/4.png",
+                            "accessibilityText": "Screenshot"
+                        },{
+                            "url": "https://mtac.app/repo/assets/com.mtac.vitreux/screenshot/5.png",
+                            "accessibilityText": "Screenshot"
+                        },{
+                            "url": "https://mtac.app/repo/assets/com.mtac.vitreux/screenshot/6.png",
+                            "accessibilityText": "Screenshot"
+                        }
+                    ],
+                    "itemCornerRadius": 8,
+                    "itemSize": "{160, 300}"
+                },
+                {
+                    "markdown": "Một tinh chỉnh thay đổi giao diện của bạn giống iOS26 Liquid Glass ở một số vị trí:\n\n• Màn Hình Chính\n\n• Màn Hình Khoá\n\n• Thông Báo\n\n• Spotlight\n\n• Thư Viện\n\n• Tuỳ chỉnh độ mờ và một số vị trí khác.",
+                    "useSpacing": "true",
+                    "class": "DepictionMarkdownView"
+                },
+                {
+                    "class": "DepictionSpacerView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Information"
+                },
+                {
+                    "class": "DepictionTableTextView",
+                    "title": "Developer",
+                    "text": "MTAC"
+                },
+                {
+                    "class": "DepictionTableTextView",
+                    "title": "Version",
+                    "text": "1.0"
+                },
+                {
+                    "class": "DepictionTableTextView",
+                    "title": "Compatibility",
+                    "text": "iOS 16.x - 17.x"
+                },
+                {
+                    "class": "DepictionTableTextView",
+                    "title": "Section",
+                    "text": "Utilities"
+                },
+                {
+                    "class": "DepictionSpacerView"
+                },
+                {
+                    "class": "DepictionTableButtonView",
+                    "title": "View on GitHub",
+                    "action": "https://github.com/MTACS/Vitreux",
+                    "openExternal": "true",
+                    "tintColor": "#00A8FF"
+                }
+            ],
+            "class": "DepictionStackView"
+        },
+        {
+            "tabname": "Changelog",
+            "views": [
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "#### Version 1.0\n\nInitial release"
+                }
+            ],
+            "class": "DepictionStackView"
+        }
+    ],
+    "class": "DepictionTabView"
+}
