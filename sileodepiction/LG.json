@@ -1,0 +1,87 @@
+{
+"minVersion":"0.1",
+"headerImage": "https://romlayvn-0411.github.io/sileojb/icons/header.png",
+"tabs":[
+{
+"tabname":"Chi tiết",
+"views":[
+{ "class":"DepictionHeaderView", "title":"" },
+{
+"class":"DepictionHeaderView",
+"title":"Giới thiệu"
+},
+{
+"markdown":"LG Themes iOS26\n\nBao gồm:\n\n• 269 icons\n\n• Mask",
+"useSpacing":"true",
+"class":"DepictionMarkdownView"
+},
+{
+"class":"DepictionSpacerView"
+},
+{
+"class":"DepictionSpacerView"
+},
+{
+"class":"DepictionHeaderView",
+"title":"Thông tin "
+},
+{
+"class":"DepictionTableTextView",
+"title":"Tác giả",
+"text":"Steph63"
+},
+{ "class":"DepictionTableTextView", "title":"Phiên bản", "text":"1.0.0" },
+{
+"class":"DepictionTableTextView",
+"title":"Thể loại",
+"text":"Themes"
+},
+{
+"class":"DepictionTableTextView",
+"title":"Ngày tải lên",
+"text":"31/8/2025"
+},
+{
+"class":"DepictionTableTextView",
+"title":"Khả năng tương thích",
+"text":"iOS 15.0 - 16"
+},
+{
+"class":"DepictionLabelView",
+"text":"Copyright © 2025 by Romlayvn",
+"textColor":"#999999",
+"fontSize":"10.0",
+"alignment":1
+},
+{
+"class":"DepictionHeaderView",
+"title":"Kênh Hỗ Trợ"
+},
+{
+"markdown":"[**Telegram**](https://t.me/romlayvn) - Hỗ trợ update.",
+"useSpacing":"true",
+"class":"DepictionMarkdownView"
+}
+],
+"class":"DepictionStackView"
+},
+{
+"tabname":"Nhật ký thay đổi",
+"views":[
+{
+"class":"DepictionMarkdownView",
+"markdown":"### Phiên bản 1.0.0\n\n- 🎉 Bản phát hành đầu tiên"
+},
+{
+"class":"DepictionLabelView",
+"text":"Copyright © 2025 by Romlayvn",
+"textColor":"#999999",
+"fontSize":"10.0",
+"alignment":1
+}
+],
+"class":"DepictionStackView"
+}
+],
+"class":"DepictionTabView"
+}

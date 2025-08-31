@@ -548,66 +548,6 @@ Icon: https://jtisvn.github.io/sectionIcons/Cask3.png
 Name: Cask 3 (Rootless)
 Sileodepiction: https://jtisvn.github.io/sileodepictions/Cask3.json
 
-Package: com.jtis.cc26
-Version: 0.4.9.6b
-Architecture: iphoneos-arm64
-Maintainer: therealhoodboy
-Installed-Size: 220
-Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 13.0), firmware (<< 18.0)
-Conflicts: com.dvntm.cc18
-Provides: com.cureux.cc26
-Filename: debs/com.jtis.cc26_0.4.9.6b_iphoneos-arm64.deb
-Size: 19968
-MD5sum: c70305d2bc668c8eda6440795175a0e2
-SHA1: 6e304e42504b067d8d7f5c5d1eae87045d80935c
-SHA256: 749a3e96d81af6278761db49b840ec43c85f8c2404ef0a9bca2779292652c8c7
-Section: Tweaks
-Description: A sleek reimagination of Control Center
-Author: therealhoodboy
-Icon: https://jtisvn.github.io/sectionIcons/CC26.png
-Name: CC26 (Rootless)
-Sileodepiction: https://jtisvn.github.io/sileodepictions/CC26.json
-
-Package: com.jtis.cc26
-Version: 0.4.9.7b
-Architecture: iphoneos-arm64
-Maintainer: therealhoodboy
-Installed-Size: 220
-Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 13.0), firmware (<< 18.0)
-Conflicts: com.dvntm.cc18
-Provides: com.cureux.cc26
-Filename: debs/com.jtis.cc26_0.4.9.7b_iphoneos-arm64.deb
-Size: 22700
-MD5sum: 630dca267963c643b41cae5c9f3ca0d6
-SHA1: 7e615d12db313355f9be820cf1dffc76deea59af
-SHA256: 166cfe2036adf744ebac0cb367a6136088dfdb857345071105e8f3a553d23aa9
-Section: Tweaks
-Description: A sleek reimagination of Control Center
-Author: therealhoodboy
-Icon: https://jtisvn.github.io/sectionIcons/CC26.png
-Name: CC26 (Rootless)
-Sileodepiction: https://jtisvn.github.io/sileodepictions/CC26.json
-
-Package: com.jtis.cc26
-Version: 0.4.9.9b
-Architecture: iphoneos-arm64
-Maintainer: JTIS Repo
-Installed-Size: 220
-Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 13.0), firmware (<< 18.0)
-Conflicts: com.dvntm.cc18
-Provides: com.cureux.cc26
-Filename: debs/com.jtis.cc26_0.4.9.9b_iphoneos-arm64.deb
-Size: 23652
-MD5sum: 5b78c081b1a4d288636e18e5547c5656
-SHA1: c159bccc4012c3bf69df0455ea86199ecd0c2d02
-SHA256: 3043867a5dc471e8b8d766aa175fb1d8b9291064e36abc102200d5458d069bd8
-Section: Tweaks
-Description: Mang phong cách mới IO26 gọn gàng cho trung tâm điều khiển trên thiết bị của bạn.
-Author: therealhoodboy
-Icon: https://jtisvn.github.io/sectionIcons/CC26.png
-Name: CC26 (Rootless)
-Sileodepiction: https://jtisvn.github.io/sileodepictions/CC26.json
-
 Package: com.jtis.clockfont
 Version: 1.0
 Architecture: iphoneos-arm64
@@ -1693,6 +1633,23 @@ Author: raul saeed
 Icon: https://romlayvn-0411.github.io/sileojb/icons/rxtiktok.png
 Name: RXTikTok
 Sileodepiction: https://romlayvn-0411.github.io/sileojb/sileodepiction/RXTikTok.json
+
+Package: com.romlayvn-0411.LG
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Maintainer: Steph63 <https://x.com/steph63163?s=21>
+Depends: firmware (>= 14.0), firmware (<< 18.0), mobilesubstrate (>= 0.9.5000)
+Filename: debs/com.romlayvn-0411.LG_1.0.0_iphoneos-arm64.deb
+Size: 39879860
+MD5sum: 3fb335a1a4f9d10d8cfd03ed307e49b5
+SHA1: 26a239ff19929aeb4f00564d060cecf62e9ce270
+SHA256: d5e2d9addfa444510189bfe23b826b674ed2c5e70d5f5f78df7e8ad7bce641c7
+Section: Themes
+Description: Chủ đề iOS26\n• 269 icons\n• Mask
+Author: Steph63 <https://x.com/steph63163?s=21>
+Depiction: https://romlayvn-0411.github.io/sileojb/sileodepiction/LG.json
+Icon: https://romlayvn-0411.github.io/sileojb/icons/icon.png
+Name: LG Themes
 
 Package: com.romlayvn-0411.VHSquidGesturePro
 Version: 1.0.0
