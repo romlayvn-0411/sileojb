@@ -1691,10 +1691,10 @@ Maintainer: raul saeed
 Installed-Size: 11544
 Depends: mobilesubstrate
 Filename: debs/com.raulsaeed.rxtiktok_1.4.5_iphoneos-arm64.deb
-Size: 2505636
-MD5sum: 73febc17ca5813073ada1cf6fd24a372
-SHA1: 00595d143ab07bfa0043ec2a5f9825e5148f1677
-SHA256: 6538bf35661c728b3dfadd9f174bfebbe19bb6d039035f46f3986dd6f1c2ee95
+Size: 3009436
+MD5sum: ab33a749a0af337903a2e6cee9021b06
+SHA1: 7c410f95300bf37635394e17d700f905782767d3
+SHA256: 9410f9b52fc5c846b9dc86ee880b47feed7ad20f5cfa3b747924d97ad91846e0
 Section: Tweaks
 Description: Nhiều tính năng thú vị cho TikTok!
 Author: raul saeed

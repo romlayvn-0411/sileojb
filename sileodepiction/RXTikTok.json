@@ -1,87 +1,105 @@
 {
 "minVersion":"0.1",
   "headerImage": "https://romlayvn-0411.github.io/sileojb/icons/header.png",
-"tabs":[
-{
-"tabname":"Chi tiết",
-"views":[
-{ "class":"DepictionHeaderView", "title":"" },
-{
-"class":"DepictionHeaderView",
-"title":"Giới thiệu"
-},
-{
-"markdown":"RXTikTok là bản tinh chỉnh tốt nhất cho ứng dụng TikTok. Giao diện người dùng được thiết kế đẹp mắt và các tính năng độc đáo, mà bạn sẽ không tìm thấy ở bất kỳ bản mod TikTok nào khác. RXTikTok cho phép người dùng tùy chỉnh TikTok theo nhu cầu và mở khóa các tính năng mới trước bất kỳ ai khác.\n\n🪙 Giá: 4$ / vĩnh viễn / chỉ 1 thiết bị / không chuyển đổi thiết bị\n\n💬 Liên hệ qua Telegram để mua:\n\n@ashhadsaeed1 - Tiền điện tử.\n\n@XavierHernan - PayPal.",
-"useSpacing":"true",
-"class":"DepictionMarkdownView"
-},
-{
-"class":"DepictionSpacerView"
-},
-{
-"class":"DepictionSpacerView"
-},
-{
-"class":"DepictionHeaderView",
-"title":"Thông tin "
-},
-{
-"class":"DepictionTableTextView",
-"title":"Tác giả",
-"text":"Raul saeed"
-},
-{ "class":"DepictionTableTextView", "title":"Phiên bản", "text":"1.3.2" },
-{
-"class":"DepictionTableTextView",
-"title":"Thể loại",
-"text":"Tweaks"
-},
-{
-"class":"DepictionTableTextView",
-"title":"Ngày tải lên",
-"text":"22/8/2025"
-},
-{
-"class":"DepictionTableTextView",
-"title":"Khả năng tương thích",
-"text":"iOS 15.0 đến 16.5"
-},
-{
-"class":"DepictionHeaderView",
-"title":"Kênh Hỗ Trợ"
-},
-{
-"markdown":"[**Telegram**](https://t.me/romlayvn) - Hỗ trợ update.",
-"useSpacing":"true",
-"class":"DepictionMarkdownView"
-},
-{
-"class":"DepictionLabelView",
-"text":"Copyright © 2025 by Romlayvn",
-"textColor":"#999999",
-"fontSize":"10.0",
-"alignment":1
-}
-],
-"class":"DepictionStackView"
-},
-{
-"tabname":"Nhật ký thay đổi",
-"views":[
-{
-"class":"DepictionMarkdownView",
-"markdown":"### Phiên bản 1.4.5\n\n- Khắc phục lỗi thích bài viết/đăng lại tin nhắn\n- Cải thiện tải ảnh & video ngoại tuyến\n- Ẩn banner 'Đã lưu'\n- Tối ưu hiển thị số lượng tải xuống\n- Khôi phục khu vực Mỹ (thử nghiệm)\n- Thiết kế lại giao diện cài đặt.Tập trung vào nâng cao trải nghiệm cá nhân hóa và bảo mật người dùng.\n\n### Phiên bản 1.3.2\n\n- Bản cập nhật này mang đến các tính năng mới như sticker theo khu vực, công cụ quản lý dữ liệu và cải tiến về streak, đồng thời khôi phục tính năng tải xuống HD và sửa các lỗi trước đó liên quan đến quảng cáo, giao diện và thống kê hồ sơ"
-},
-{
-"class":"DepictionLabelView",
-"text":"Copyright © 2025 by Romlayvn",
-"textColor":"#999999",
-"fontSize":"10.0",
-"alignment":1
-}
-],
-"class":"DepictionStackView"
-}
-],
-"class":"DepictionTabView"
+  "tabs": [
+    {
+      "tabname": "Giới thiệu",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "RXTikTok - Tinh chỉnh dành cho TikTok"
+        },
+        {
+          "class": "DepictionImageView",
+          "URL": "https://romlayvn-0411.github.io/sileojb/icons/viewrx.png",
+          "height": 200
+        },
+        {
+          "class": "DepictionSpacerView",
+          "spacing": 20
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "RXTikTok là bản tinh chỉnh tốt nhất cho ứng dụng TikTok. Giao diện người dùng được thiết kế đẹp mắt và các tính năng độc đáo, mà bạn sẽ không tìm thấy ở bất kỳ bản mod TikTok nào khác. RXTikTok cho phép người dùng tùy chỉnh TikTok theo nhu cầu và mở khóa các tính năng mới trước bất kỳ ai khác.\n\n🪙 **Giá**: 4$ / vĩnh viễn / chỉ 1 thiết bị / không chuyển đổi thiết bị\n\n💬 **Liên hệ qua Telegram để mua**:\n\n- [@ashhadsaeed1](https://t.me/ashhadsaeed1) - Tiền điện tử.\n- [@XavierHernan](https://t.me/XavierHernan) - PayPal."
+        },
+        {
+          "class": "DepictionSpacerView",
+          "spacing": 20
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Thông tin chi tiết"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Tác giả",
+          "text": "Raul Saeed"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Phiên bản",
+          "text": "1.4.5"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Thể loại",
+          "text": "Tweaks"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Ngày tải lên",
+          "text": "22/8/2025"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Khả năng tương thích",
+          "text": "iOS 15.0 đến 16.5"
+        }
+      ],
+      "class": "DepictionStackView"
+    },
+    {
+      "tabname": "Liên Hệ Hỗ Trợ",
+      "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "[**Kênh hỗ trợ Telegram**](https://t.me/romlayvn) - Hỗ trợ cập nhật và giải đáp thắc mắc."
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Repo & Nguồn"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "- [**JTISVN Repo**](http://jtisvn.github.io)\n- [**Chariz Repo**](https://repo.chariz.com/)\n- [**Havoc**](https://havoc.app/)\n- [**Packix Repo**](https://repo.packix.com/)"
+        },
+        {
+          "class": "DepictionLabelView",
+          "text": "Copyright © 2025 by Romlayvn",
+          "textColor": "#999999",
+          "fontSize": 10,
+          "alignment": 1
+        }
+      ],
+      "class": "DepictionStackView"
+    },
+    {
+      "tabname": "Nhật ký thay đổi",
+      "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### Phiên bản 1.4.5\n- Khắc phục lỗi thích bài viết/đăng lại tin nhắn\n- Cải thiện tải ảnh & video ngoại tuyến\n- Ẩn banner 'Đã lưu'\n- Tối ưu hiển thị số lượng tải xuống\n- Khôi phục khu vực Mỹ (thử nghiệm)\n- Thiết kế lại giao diện cài đặt, tập trung vào nâng cao trải nghiệm cá nhân hóa và bảo mật người dùng.\n\n### Phiên bản 1.3.2\n- Bản cập nhật này mang đến các tính năng mới như sticker theo khu vực, công cụ quản lý dữ liệu và cải tiến về streak, đồng thời khôi phục tính năng tải xuống HD và sửa các lỗi trước đó liên quan đến quảng cáo, giao diện và thống kê hồ sơ."
+        },
+        {
+          "class": "DepictionLabelView",
+          "text": "Copyright © 2025 by Romlayvn",
+          "textColor": "#999999",
+          "fontSize": 10,
+          "alignment": 1
+        }
+      ],
+      "class": "DepictionStackView"
+    }
+  ],
+  "class": "DepictionTabView"
 }
