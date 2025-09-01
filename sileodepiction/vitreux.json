@@ -82,9 +82,7 @@
             "views": [
                 {
                     "class": "DepictionMarkdownView",
-                    "markdown": "#### Version 1.1\n\nKhắc phục Shadow cắt ra khỏi giới hạn trên âm lượng HUD và
-Các nút bên trong các mô -đun trung tâm điều khiển mở rộng. Thêm vào
-Hỗ trợ cho các mô -đun trung tâm điều khiển & thiết bị iOS 15.x#### Version 1.0\n\nInitial release"
+                    "markdown": "#### Version 1.1\n\nKhắc phục Shadow cắt ra khỏi giới hạn trên âm lượng HUD và Các nút bên trong các mô -đun trung tâm điều khiển mở rộng. Thêm vào Hỗ trợ cho các mô -đun trung tâm điều khiển & thiết bị iOS 15.x#### Version 1.0\n\nInitial release"
                 }
             ],
             "class": "DepictionStackView"
