@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setNightMode();
 
     // Thêm âm thanh
-    const soundEffect = new Audio('notification.mp3'); // Đường dẫn đến file âm thanh
+    const soundEffect = new Audio('./sounds/notification.mp3'); // Đường dẫn đến file âm thanh
 
     commandInput.addEventListener('keydown', (event) => {
         if (event.key === 'Enter') {
@@ -153,18 +153,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function addToSileo() {
         const repoURL = "https://romlayvn-0411.github.io/sileojb/";
-        window.location.href = `sileo://source/${encodeURIComponent(repoURL)}`;
-        setTimeout(() => {
-            showToast("Nếu không mở được Sileo, hãy sao chép URL và thêm thủ công.");
-        }, 1000);
+        try {
+            // Mở Sileo với URL nguồn trực tiếp
+            window.location.href = `sileo://source/${repoURL}`;
+            showToast("Đang mở Sileo để thêm nguồn...");
+        } catch (error) {
+            // Fallback nếu không mở được
+            showToast("Không thể mở Sileo. Sao chép URL để thêm thủ công.");
+            navigator.clipboard.writeText(repoURL)
+                .then(() => showToast("URL đã được sao chép vào clipboard!"))
+                .catch(() => showToast("Sao chép URL thất bại."));
+        }
     }
 
     function addToZebra() {
         const repoURL = "https://romlayvn-0411.github.io/sileojb/";
-        window.location.href = `zbra://source/add/${encodeURIComponent(repoURL)}`;
-        setTimeout(() => {
-            showToast("Nếu không mở được Zebra, hãy sao chép URL và thêm thủ công.");
-        }, 1000);
+        try {
+            // Mở Zebra với URL nguồn trực tiếp
+            window.location.href = `zbra://source/add/${repoURL}`;
+            showToast("Đang mở Zebra để thêm nguồn...");
+        } catch (error) {
+            // Fallback nếu không mở được
+            showToast("Không thể mở Zebra. Sao chép URL để thêm thủ công.");
+            navigator.clipboard.writeText(repoURL)
+                .then(() => showToast("URL đã được sao chép vào clipboard!"))
+                .catch(() => showToast("Sao chép URL thất bại."));
+        }
     }
 });
 
