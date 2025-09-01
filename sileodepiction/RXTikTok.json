@@ -8,6 +8,15 @@
         {
           "class": "DepictionHeaderView",
           "title": "RXTikTok - Tinh chỉnh dành cho TikTok"
+        }, 
+        {
+          "class": "DepictionSpacerView",
+          "spacing": 20
+        },
+        {
+          "class": "DepictionImageView",
+          "URL": "https://romlayvn-0411.github.io/sileojb/icons/viewrx.png",
+          "height": 200
         },
         {
           "class": "DepictionImageView",
@@ -28,7 +37,7 @@
         },
         {
           "class": "DepictionHeaderView",
-          "title": "Thông tin chi tiết"
+          "title": "Thông tin"
         },
         {
           "class": "DepictionTableTextView",
@@ -59,15 +68,15 @@
       "class": "DepictionStackView"
     },
     {
-      "tabname": "Liên Hệ Hỗ Trợ",
+      "tabname": "Hỗ Trợ",
       "views": [
         {
           "class": "DepictionMarkdownView",
-          "markdown": "[**Kênh hỗ trợ Telegram**](https://t.me/romlayvn) - Hỗ trợ cập nhật và giải đáp thắc mắc."
+          "markdown": "[**Hỗ trợ Telegram**](https://t.me/romlayvn) - Hỗ trợ cập nhật và giải đáp thắc mắc."
         },
         {
           "class": "DepictionHeaderView",
-          "title": "Repo & Nguồn"
+          "title": "Repo Liên Kết"
         },
         {
           "class": "DepictionMarkdownView",
@@ -84,7 +93,7 @@
       "class": "DepictionStackView"
     },
     {
-      "tabname": "Nhật ký thay đổi",
+      "tabname": "Nhật ký",
       "views": [
         {
           "class": "DepictionMarkdownView",

@@ -3,92 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SileoJB - Kỷ Niệm Quốc Khánh 02/09</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>SileoJB</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
-    <meta property="og:title" content="SileoJB - Kho Tinh Chỉnh iOS" />
-    <meta property="og:description" content="Kho lưu trữ Sileo: tải tweak cho iOS." />
-    <meta name="twitter:card" content="summary" />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1><span class="highlight-yellow animated-text">Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam</span></h1>
-            <h2 class="slogan">Độc Lập - Tự Do - Hạnh Phúc</h2>
-            <h3 class="slogan">02/09/1945 - 02/09/2025</h3>
-        </header>
-
-        <div class="hero">
-            <div class="flag-container" aria-hidden="true">
-                <div class="vietnam-flag">
-                    <div class="star" aria-hidden="true">★</div>
-                </div>
+    <div class="terminal-wrapper">
+        <div class="terminal-header">
+            <div class="terminal-buttons">
+                <span class="button close"></span>
+                <span class="button minimize"></span>
+                <span class="button maximize"></span>
             </div>
-
-            <div class="national-day">
-                <p><i class="fas fa-star"></i> <span class="highlight-yellow animated-text">SileoJB</span> <i class="fas fa-star"></i></p>
-                Kỉ Niệm 80 Năm Quốc Khánh Việt Nam
-                
-            </div>
-
-            <div class="bamboo-border"></div>
+            <div class="terminal-title">RootLess Support</div>
         </div>
-
-        <div class="content">
-            <div class="card">
-                <h2><i class="fas fa-info-circle"></i> Giới thiệu Sileo Jailbreak</h2>
-                <p>SileoJB là một kho lưu trữ tinh chỉnh hiện đại, hỗ trợ tải và cài đặt các tweak miễn phí cho thiết bị iOS của bạn. Dự án của chúng tôi cung cấp một nguồn Sileo ổn định và dễ sử dụng.</p>
-                <p>Với tinh thần tự hào dân tộc, chúng tôi mang đến trải nghiệm jailbreak tốt nhất cho người dùng Việt Nam.</p>
+        <div class="terminal-body">
+            <div class="terminal-output">
+                <h1>Welcome to SileoJB</h1>
+                <p>Kho lưu trữ tinh chỉnh dành cho người dùng Việt Nam.</p>
+                <p>Nhập lệnh `help` để bắt đầu.</p>
             </div>
-
-            <div class="card">
-                <h2><i class="fas fa-user"></i> Liên Hệ Hỗ Trợ</h2>
-                <p><strong>Tên:</strong> Ròm Lầy VN</p>
-                <p><strong>Mật Danh:</strong> Người sưu tầm</p>
-                <p><strong>Mô tả:</strong> Tôi là một người dùng với niềm đam mê công nghệ và lòng yêu nước sâu sắc. Tôi luôn mong muốn đóng góp cho cộng đồng người dùng Việt Nam.</p>
-                
-                <div class="contact">
-                    <a href="https://t.me/romlayvn" title="Telegram"><i class="fab fa-telegram"></i></a>
-                    <a href="https://x.com/romlayvn" title="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
-                </div>
+            <div class="terminal-input">
+                <span class="prompt">$</span>
+                <input type="text" id="commandInput" placeholder="Nhập lệnh..." autofocus>
             </div>
         </div>
-
-    <div class="repo-input">
-            <h3><i class="fas fa-link"></i> URL Nguồn</h3>
-            <div class="url-container">
-                <input type="text" class="url-input" id="repoUrl" value="https://romlayvn-0411.github.io/sileojb/" readonly>
-        <button class="url-copy" onclick="copyRepoUrl()" aria-label="Sao chép URL nguồn"><i class="fas fa-copy"></i> Sao chép</button>
-            </div>
-            <p>Bạn có thể sao chép URL trên và thêm thủ công vào Sileo hoặc Zebra nếu các nút bên dưới không hoạt động.</p>
-        </div>
-
-        <div class="button-group">
-            <button class="button primary" onclick="addToSileo()" aria-label="Thêm vào Sileo">
-                <i class="fas fa-download"></i> Thêm vào Sileo
-            </button>
-            <button class="button secondary" onclick="addToZebra()" aria-label="Thêm vào Zebra">
-                <i class="fas fa-download"></i> Thêm vào Zebra
-            </button>
-        </div>
-
-        <footer>
-            <p>&copy; 2025 SileoJB. Tất cả quyền được bảo lưu.</p>
-            <div class="controls">
-                <button class="mode-toggle" onclick="toggleDarkMode()">
-                    <i class="fas fa-moon"></i> Chế độ Sáng/Tối
-                </button>
-            </div>
-        </footer>
     </div>
-
-    <!-- Toast container -->
-    <div id="toast" role="status" aria-live="polite" class="toast" hidden></div>
-
     <script src="script.js"></script>
 </body>
 </html>
