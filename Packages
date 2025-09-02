@@ -98,6 +98,38 @@ Description: TrollVNC is a VNC server for iOS devices, allowing remote access an
 Author: 82Flex <82flex@gmail.com>
 Name: TrollVNC
 
+Package: com.82flex.trollvnc
+Version: 1.7
+Architecture: iphoneos-arm
+Maintainer: 82Flex <82flex@gmail.com>
+Installed-Size: 5280
+Depends: firmware (>= 14.0), preferenceloader
+Filename: debs/com.82flex.trollvnc_1.7_iphoneos-arm.deb
+Size: 1439084
+MD5sum: 1347a5fa121e78796fcb447b8ebbd649
+SHA1: eb588639e9f8a0e46c89875cb5e702951e9b3ee8
+SHA256: dc35e5f9b981e6eb29a4e961a5a531a50ae0d5404f4bd0dc91ae8f8d6bdae19c
+Section: Tweaks
+Description: TrollVNC is a VNC server for iOS devices, allowing remote access and control of the device’s screen.
+Author: 82Flex <82flex@gmail.com>
+Name: TrollVNC
+
+Package: com.82flex.trollvnc
+Version: 1.8
+Architecture: iphoneos-arm64
+Maintainer: 82Flex <82flex@gmail.com>
+Installed-Size: 5280
+Depends: firmware (>= 14.0), preferenceloader
+Filename: debs/com.82flex.trollvnc_1.8_iphoneos-arm64.deb
+Size: 1439596
+MD5sum: b31f608b21a99012442dd2b92fc8d77c
+SHA1: 7b9e3d4eb52a6d2fca6a3da5436dbc35f17df4c7
+SHA256: a4c93cd03ed84907d601140d41c2a2f8f46ad94b8ef2f64abaa43411f4507b83
+Section: Tweaks
+Description: TrollVNC is a VNC server for iOS devices, allowing remote access and control of the device’s screen.
+Author: 82Flex <82flex@gmail.com>
+Name: TrollVNC
+
 Package: com.Axs.cc18s
 Version: 0.0.3
 Architecture: iphoneos-arm64
@@ -305,6 +337,24 @@ Description: Mang phong cách tìm kiếm trên iOS 16 xuống iOS 15
 Author: NightwinDev
 Icon: file:///var/jb/Library/IconRepo/tinhchinhh1.png
 Name: SearchDots VH(Rootless)
+
+Package: com.ivintagelover.solidglassrl
+Version: 2.0
+Architecture: iphoneos-arm64
+Depends: firmware (>=12.0)
+Filename: debs/com.ivintagelover.solidglassrl.deb
+Size: 5892624
+MD5sum: cd421afdc4136334d037cb6097bd20e5
+SHA1: 337b652ef7d2f69ca345dfd701da378af6f33369
+SHA256: a24433c66721b2f495779cccd7687ab0b546912eaa824c011e12f6927d4cc8d8
+Section: Themes
+Description: iOS 26 icons for older devices.
+Depiction: https://github.io/depiction/web/com.ivintagelover.solidglassrl.html
+Icon: https://github.io/assets/com.ivintagelover.solidglassrl/icon.png
+Moderndepiction: https://github.io/depiction/native/com.ivintagelover.solidglassrl.json
+Name: Solid Glass 2 Rootless
+Sileodepiction: https://github.io/depiction/native/com.ivintagelover.solidglassrl.json
+Tags: compatible_min::ios12.0, compatible_max::ios18.6
 
 Package: com.jti.atria
 Version: 1.4.1
