@@ -1,0 +1,111 @@
+{
+"minVersion":"0.1",
+  "headerImage": "https://romlayvn-0411.github.io/sileojb/icons/header.png",
+  "tabs": [
+    {
+      "tabname": "Giới thiệu",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "TrollVNc - Điều khiển thiết bị iphone trên máy tính"
+        }, 
+        {
+                    "class": "DepictionScreenshotsView",
+                    "screenshots": [
+                        {
+                            "url": "https://romlayvn-0411.github.io/sileojb/infodeb/TrollVNC/screenshot/trollvnc.png",
+                            "accessibilityText": "Screenshot"
+                        }
+                    ],
+                    "itemCornerRadius": 8,
+                    "itemSize": "{300, 160}"
+                },
+        {
+          "class": "DepictionSpacerView",
+          "spacing": 20
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "TrollVNC kết nối điện thoại của bạn với pc"
+        },
+        {
+          "class": "DepictionSpacerView",
+          "spacing": 20
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Thông tin"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Tác giả",
+          "text": "82flex"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Phiên bản",
+          "text": "2.0"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Thể loại",
+          "text": "Tweaks"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Ngày tải lên",
+          "text": "4/9/2025"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Khả năng tương thích",
+          "text": "iOS 15.0 đến 16.5"
+        }
+      ],
+      "class": "DepictionStackView"
+    },
+    {
+      "tabname": "Hỗ Trợ",
+      "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "[**Hỗ trợ Telegram**](https://t.me/romlayvn) - Hỗ trợ cập nhật và giải đáp thắc mắc."
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Repo Liên Kết"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "- [**JTISVN Repo**](http://jtisvn.github.io)\n- [**Chariz Repo**](https://repo.chariz.com/)\n- [**Havoc**](https://havoc.app/)\n- [**Packix Repo**](https://repo.packix.com/)"
+        },
+        {
+          "class": "DepictionLabelView",
+          "text": "Copyright © 2025 by Romlayvn",
+          "textColor": "#999999",
+          "fontSize": 10,
+          "alignment": 1
+        }
+      ],
+      "class": "DepictionStackView"
+    },
+    {
+      "tabname": "Nhật ký",
+      "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### Phiên bản 2.0\n- Hỗ trợ Reverse VNC\n\n### Phiên bản 1.9\n- Hỗ trợ clipboard (Ultravnc)\n- Định danh gói đã thay đổi cho ứng dụng độc lập của Trollvnc, bạn có thể cần phải gỡ cài đặt các ứng dụng cũ.\n\n### Phiên bản 1.8\n- Hỗ trợ iPad\n\n### Phiên bản 1.7\n- Hỗ trợ kích hoạt tự động\n- Tên Bonjour ngẫu nhiên\n\n### Phiên bản 1.6\n- Hỗ trợ khám phá tự động thông qua Bonjour\n\n### Phiên bản 1.5\n- Hỗ trợ TrollStore\n\n### Phiên bản 1.4\n- Sửa lỗi\n\n### Phiên bản 1.3\n- Sửa lỗi\n\n### Phiên bản 1.2\n- Sửa lỗi\n\n### Phiên bản 1.1\n- Phát hành bản đầu tiên\n- Hỗ trợ RootFull\n- Hỗ trợ RootLess\n- Hỗ trợ RootHide"
+        },
+        {
+          "class": "DepictionLabelView",
+          "text": "Copyright © 2025 by Romlayvn",
+          "textColor": "#999999",
+          "fontSize": 10,
+          "alignment": 1
+        }
+      ],
+      "class": "DepictionStackView"
+    }
+  ],
+  "class": "DepictionTabView"
+}
