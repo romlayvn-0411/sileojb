@@ -10,14 +10,16 @@
           "title": "RXTikTok - Tinh chỉnh dành cho TikTok"
         }, 
         {
-          "class": "DepictionSpacerView",
-          "spacing": 20
-        },
-        {
-          "class": "DepictionImageView",
-          "URL": "https://romlayvn-0411.github.io/sileojb/icons/viewrx.png",
-          "height": 200
-        },
+                    "class": "DepictionScreenshotsView",
+                    "screenshots": [
+                        {
+                            "url": "https://romlayvn-0411.github.io/sileojb/infodeb/RXTikTok/screenshot/viewrx.png",
+                            "accessibilityText": "Screenshot"
+                        }
+                    ],
+                    "itemCornerRadius": 8,
+                    "itemSize": "{160, 300}"
+                },
         {
           "class": "DepictionImageView",
           "URL": "https://romlayvn-0411.github.io/sileojb/icons/viewrx.png",

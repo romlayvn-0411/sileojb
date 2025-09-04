@@ -1,0 +1,70 @@
+{
+    "minVersion": "0.1",
+    "headerImage": "https://romlayvn-0411.github.io/sileojb/icons/header.png",
+    "tintColor": "#00A8FF",
+    "tabs": [
+        {
+            "tabname": "Giới Thiệu",
+            "views": [
+                {
+                    "class": "DepictionScreenshotsView",
+                    "screenshots": [
+                        {
+                            "url": "https://romlayvn-0411.github.io/sileojb/infodeb/NFB/screenshot/NFB.png",
+                            "accessibilityText": "Screenshot"
+                        }
+                    ],
+                    "itemCornerRadius": 8,
+                    "itemSize": "{160, 300}"
+                },
+                {
+                    "markdown": "Mang nhiều tính năng hơn cho Twitter",
+                    "useSpacing": "true",
+                    "class": "DepictionMarkdownView"
+                },
+                {
+                    "class": "DepictionSpacerView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Thông tin"
+                },
+                {
+                    "class": "DepictionTableTextView",
+                    "title": "Developer",
+                    "text": "NeoFreBird"
+                },
+                {
+                    "class": "DepictionTableTextView",
+                    "title": "Version",
+                    "text": "5.1-3"
+                },
+                {
+                    "class": "DepictionTableTextView",
+                    "title": "Compatibility",
+                    "text": "iOS 15.x - 16.x"
+                },
+                {
+                    "class": "DepictionTableTextView",
+                    "title": "Section",
+                    "text": "Tweaks"
+                },
+                {
+                    "class": "DepictionSpacerView"
+                },
+            ],
+            "class": "DepictionStackView"
+        },
+        {
+            "tabname": "Nhật Ký",
+            "views": [
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "#### Version 5.1-3\n\nGiao diện cài đặt đơn giản hoá"
+                }
+            ],
+            "class": "DepictionStackView"
+        }
+    ],
+    "class": "DepictionTabView"
+}
