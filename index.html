@@ -2,33 +2,194 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SileoJB</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>SileoJB - Advanced iOS Repository Terminal</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Orbitron:wght@400;700;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="CydiaIcon.png" type="image/png">
+    <meta name="description" content="SileoJB - Kho lưu trữ tinh chỉnh iOS chuyên nghiệp dành cho cộng đồng Việt Nam">
+    <meta name="keywords" content="iOS, jailbreak, tweaks, sileo, cydia, repository, vietnam">
+    <meta name="theme-color" content="#00ff88">
+    
+    <!-- PWA Support -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="SileoJB">
 </head>
 <body>
-    <div class="terminal-wrapper">
-        <div class="terminal-header">
-            <div class="terminal-buttons">
-                <span class="button close"></span>
-                <span class="button minimize"></span>
-                <span class="button maximize"></span>
+    <!-- Background Effects -->
+    <div class="bg-effects">
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        <div class="clouds"></div>
+    </div>
+
+    <!-- Floating Particles -->
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- Main Terminal Container -->
+    <div class="terminal-container">
+        <!-- Terminal Window -->
+        <div class="terminal-wrapper">
+            <!-- Terminal Header -->
+            <div class="terminal-header">
+                <div class="terminal-controls">
+                    <div class="control-buttons">
+                        <span class="control-btn close" title="Close" onclick="animateClose()"></span>
+                        <span class="control-btn minimize" title="Minimize" onclick="animateMinimize()"></span>
+                        <span class="control-btn maximize" title="Maximize" onclick="animateMaximize()"></span>
+                    </div>
+                    <div class="terminal-title">
+                        <div class="title-content">
+                            <span class="status-led"></span>
+                            <span class="title-text">SileoJB Terminal v3.0</span>
+                            <span class="connection-badge">
+                                <span class="badge-dot"></span>
+                                SECURE CONNECTION
+                            </span>
+                        </div>
+                    </div>
+                    <div class="terminal-info">
+                        <span class="cpu-usage">CPU: <span id="cpu">42%</span></span>
+                        <span class="memory-usage">RAM: <span id="ram">1.2GB</span></span>
+                    </div>
+                </div>
+                <div class="scan-line"></div>
             </div>
-            <div class="terminal-title">RootLess Support</div>
+
+            <!-- Terminal Body -->
+            <div class="terminal-body">
+                <div class="terminal-output" id="terminalOutput" role="log" aria-live="polite" aria-label="Terminal output">
+                    <!-- Boot Sequence -->
+                    <div class="boot-sequence">
+                        <div class="boot-logo">
+                            <div class="ascii-art">
+    ███████╗██╗██╗     ███████╗ ██████╗      ██╗██████╗ 
+    ██╔════╝██║██║     ██╔════╝██╔═══██╗     ██║██╔══██╗
+    ███████╗██║██║     █████╗  ██║   ██║     ██║██████╔╝
+    ╚════██║██║██║     ██╔══╝  ██║   ██║██   ██║██╔══██╗
+    ███████║██║███████╗███████╗╚██████╔╝╚█████╔╝██████╔╝
+    ╚══════╝╚═╝╚══════╝╚══════╝ ╚═════╝  ╚════╝ ╚═════╝ 
+                            </div>
+                        </div>
+                        
+                        <div class="system-info">
+                            <div class="info-grid">
+                                <div class="info-item">
+                                    <span class="info-label">System:</span>
+                                    <span class="info-value">iOS Jailbreak Repository</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Version:</span>
+                                    <span class="info-value">1.0.0-RELEASE</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Architecture:</span>
+                                    <span class="info-value">ARM64</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Packages:</span>
+                                    <span class="info-value">20+ Tweaks</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Status:</span>
+                                    <span class="info-value status-online">🟢 ONLINE</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Security:</span>
+                                    <span class="info-value">🔒 ENCRYPTED</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="welcome-message">
+                            <h1 class="welcome-title">🔓 Welcome to SileoJB Advanced Terminal</h1>
+                            <p class="welcome-subtitle">🇻🇳 Kho lưu trữ tinh chỉnh chuyên nghiệp dành cho cộng đồng Việt Nam</p>
+                            <p class="welcome-instruction">💻 Type <span class="command-highlight">help</span> to explore available commands</p>
+                        </div>
+
+                        <!-- Loading Progress -->
+                        <div class="loading-container">
+                            <div class="loading-text">Initializing Terminal...</div>
+                            <div class="progress-bar">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <div class="loading-percentage">100%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Terminal Input - Fixed Section -->
+                <div class="terminal-input-section">
+                    <div class="input-line">
+                        <span class="prompt" aria-hidden="true">
+                            <span style="color: var(--success-color);">root</span><span style="color: var(--text-muted);">@</span><span style="color: var(--accent-color);">sileojb</span><span style="color: var(--text-muted);">:</span><span style="color: var(--warning-color);">~</span><span style="color: var(--primary-color);"># </span>
+                        </span>
+                        <input 
+                            type="text" 
+                            id="commandInput" 
+                            class="terminal-input" 
+                            placeholder="Type a command or 'help' for assistance..." 
+                            autofocus 
+                            autocomplete="off"
+                            spellcheck="false"
+                            aria-label="Command input"
+                            role="textbox"
+                        >
+                        <div class="input-glow"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="terminal-body">
-            <div class="terminal-output">
-                <h1>Welcome to SileoJB</h1>
-                <p>Kho lưu trữ tinh chỉnh dành cho người dùng Việt Nam.</p>
-                <p>Nhập lệnh `help` để bắt đầu.</p>
-            </div>
-            <div class="terminal-input">
-                <span class="prompt">$</span>
-                <input type="text" id="commandInput" placeholder="Nhập lệnh..." autofocus>
+
+        <!-- Quick Actions Panel -->
+        <div class="quick-actions">
+            <div class="action-group">
+                <button class="action-btn" onclick="executeCommand('about')" title="About Repository">
+                    <i class="icon">ℹ️</i>
+                    <span>About</span>
+                </button>
+                <button class="action-btn" onclick="executeCommand('packages')" title="View Packages">
+                    <i class="icon">📦</i>
+                    <span>Packages</span>
+                </button>
+                <button class="action-btn" onclick="executeCommand('addsileo')" title="Add to Sileo">
+                    <i class="icon">📱</i>
+                    <span>Sileo</span>
+                </button>
+                <button class="action-btn" onclick="executeCommand('copy')" title="Copy URL">
+                    <i class="icon">📋</i>
+                    <span>Copy</span>
+                </button>
             </div>
         </div>
     </div>
+
+    <!-- Notification Container -->
+    <div id="notificationContainer" class="notification-container"></div>
+
+    <!-- Theme Toggle -->
+    <div class="theme-toggle" onclick="toggleTheme()" title="Toggle Theme">
+        <div class="theme-icon">🌓</div>
+    </div>
+
+    <!-- Audio Elements -->
+    <audio id="keySound" preload="auto">
+        <source src="sounds/key.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="notificationSound" preload="auto">
+        <source src="sounds/notification.mp3" type="audio/mpeg">
+    </audio>
+
     <script src="script.js"></script>
 </body>
 </html>
