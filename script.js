@@ -12,6 +12,7 @@ class SileoJBTerminal {
         this.currentTheme = 'dark';
         this.cpuUsage = 42;
         this.ramUsage = 1.2;
+        this.audioEnabled = localStorage.getItem('sileojb-audio') !== 'false';
         
         this.init();
     }
@@ -158,7 +159,7 @@ class SileoJBTerminal {
     }
 
     autoComplete() {
-        const availableCommands = ['help', 'about', 'status', 'packages', 'link', 'copy', 'addsileo', 'addzebra', 'time', 'clear', 'matrix', 'reboot', 'light', 'dark', 'stats', 'weather', 'crypto'];
+        const availableCommands = ['help', 'about', 'status', 'packages', 'link', 'copy', 'addsileo', 'addzebra', 'time', 'clear', 'matrix', 'reboot', 'light', 'dark', 'audio', 'stats', 'weather', 'crypto'];
         const currentValue = this.commandInput.value.toLowerCase();
         
         const matches = availableCommands.filter(cmd => cmd.startsWith(currentValue));
@@ -260,6 +261,10 @@ class SileoJBTerminal {
                 this.setTheme('dark');
                 response = '🌙 Dark mode activated.';
                 break;
+            case 'audio':
+                this.toggleAudio();
+                response = `🔊 Audio ${this.audioEnabled ? 'enabled' : 'disabled'}.`;
+                break;
             default:
                 response = this.getErrorResponse(command);
         }
@@ -286,6 +291,7 @@ class SileoJBTerminal {
 │  🎨 INTERFACE COMMANDS:                        │
 │  • light     - Switch to light theme          │
 │  • dark      - Switch to dark theme           │
+│  • audio     - Toggle audio on/off            │
 │  • matrix    - Activate Matrix rain effect    │
 │                                                │
 │  ⚡ SYSTEM COMMANDS:                            │
@@ -532,7 +538,7 @@ ${suggestions.length > 0 ? suggestions.map(s => `• ${s}`).join('\n') : '• Ty
     }
 
     getSuggestions(command) {
-        const commands = ['help', 'about', 'status', 'packages', 'link', 'copy', 'addsileo', 'addzebra', 'time', 'clear', 'matrix', 'reboot', 'light', 'dark', 'stats', 'weather', 'crypto'];
+        const commands = ['help', 'about', 'status', 'packages', 'link', 'copy', 'addsileo', 'addzebra', 'time', 'clear', 'matrix', 'reboot', 'light', 'dark', 'audio', 'stats', 'weather', 'crypto'];
         return commands.filter(cmd => {
             return this.levenshteinDistance(command.toLowerCase(), cmd) <= 2;
         }).slice(0, 3);
@@ -779,6 +785,12 @@ ${suggestions.length > 0 ? suggestions.map(s => `• ${s}`).join('\n') : '• Ty
         }, 300);
     }
 
+    toggleAudio() {
+        this.audioEnabled = !this.audioEnabled;
+        localStorage.setItem('sileojb-audio', this.audioEnabled.toString());
+        this.showNotification(`🔊 Audio ${this.audioEnabled ? 'enabled' : 'disabled'}!`, 'success');
+    }
+
     setInitialTheme() {
         const savedTheme = localStorage.getItem('sileojb-theme');
         if (savedTheme) {
@@ -817,18 +829,96 @@ ${suggestions.length > 0 ? suggestions.map(s => `• ${s}`).join('\n') : '• Ty
     }
 
     playKeySound() {
-        const keySound = document.getElementById('keySound');
-        if (keySound) {
-            keySound.currentTime = 0;
-            keySound.play().catch(() => {});
+        if (!this.audioEnabled) return;
+        
+        try {
+            // Try to play audio file first
+            const keySound = document.getElementById('keySound');
+            if (keySound && keySound.readyState >= 2) {
+                keySound.currentTime = 0;
+                keySound.play().catch(() => {
+                    // If audio file fails, create synthetic sound
+                    this.createSyntheticKeySound();
+                });
+            } else {
+                // Create synthetic sound as fallback
+                this.createSyntheticKeySound();
+            }
+        } catch (error) {
+            // Silently handle audio errors
+        }
+    }
+
+    createSyntheticKeySound() {
+        if (!this.audioEnabled) return;
+        
+        try {
+            if (window.AudioContext || window.webkitAudioContext) {
+                const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                const oscillator = audioContext.createOscillator();
+                const gainNode = audioContext.createGain();
+                
+                oscillator.connect(gainNode);
+                gainNode.connect(audioContext.destination);
+                
+                oscillator.frequency.setValueAtTime(800, audioContext.currentTime);
+                oscillator.type = 'sine';
+                
+                gainNode.gain.setValueAtTime(0.1, audioContext.currentTime);
+                gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.1);
+                
+                oscillator.start(audioContext.currentTime);
+                oscillator.stop(audioContext.currentTime + 0.1);
+            }
+        } catch (error) {
+            // Silently handle audio context errors
         }
     }
 
     playNotificationSound() {
-        const notificationSound = document.getElementById('notificationSound');
-        if (notificationSound) {
-            notificationSound.currentTime = 0;
-            notificationSound.play().catch(() => {});
+        if (!this.audioEnabled) return;
+        
+        try {
+            const notificationSound = document.getElementById('notificationSound');
+            if (notificationSound && notificationSound.readyState >= 2) {
+                notificationSound.currentTime = 0;
+                notificationSound.play().catch(() => {
+                    // If audio file fails, create synthetic sound
+                    this.createSyntheticNotificationSound();
+                });
+            } else {
+                // Create synthetic sound as fallback
+                this.createSyntheticNotificationSound();
+            }
+        } catch (error) {
+            // Silently handle audio errors
+        }
+    }
+
+    createSyntheticNotificationSound() {
+        if (!this.audioEnabled) return;
+        
+        try {
+            if (window.AudioContext || window.webkitAudioContext) {
+                const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                const oscillator = audioContext.createOscillator();
+                const gainNode = audioContext.createGain();
+                
+                oscillator.connect(gainNode);
+                gainNode.connect(audioContext.destination);
+                
+                oscillator.frequency.setValueAtTime(600, audioContext.currentTime);
+                oscillator.frequency.setValueAtTime(800, audioContext.currentTime + 0.1);
+                oscillator.type = 'sine';
+                
+                gainNode.gain.setValueAtTime(0.2, audioContext.currentTime);
+                gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.3);
+                
+                oscillator.start(audioContext.currentTime);
+                oscillator.stop(audioContext.currentTime + 0.3);
+            }
+        } catch (error) {
+            // Silently handle audio context errors
         }
     }
 
@@ -973,8 +1063,40 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+// ====== AUDIO INITIALIZATION ======
+function initializeAudio() {
+    try {
+        const keySound = document.getElementById('keySound');
+        const notificationSound = document.getElementById('notificationSound');
+        
+        // Add error event listeners
+        if (keySound) {
+            keySound.addEventListener('error', () => {
+                console.log('Key sound file not found, using synthetic audio');
+            });
+            keySound.addEventListener('canplaythrough', () => {
+                console.log('Key sound loaded successfully');
+            });
+        }
+        
+        if (notificationSound) {
+            notificationSound.addEventListener('error', () => {
+                console.log('Notification sound file not found, using synthetic audio');
+            });
+            notificationSound.addEventListener('canplaythrough', () => {
+                console.log('Notification sound loaded successfully');
+            });
+        }
+    } catch (error) {
+        console.log('Audio initialization failed, using synthetic audio fallback');
+    }
+}
+
 function initializeTerminal() {
     window.terminal = new SileoJBTerminal();
+    
+    // Initialize audio elements with error handling
+    initializeAudio();
     
     // Focus input when page loads
     setTimeout(() => {
