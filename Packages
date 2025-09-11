@@ -329,6 +329,25 @@ Author: NeoFreeBird
 Name: NFB-BHTwitter
 Sileodepiction: https://romlayvn-0411.github.io/sileojb/sileodepiction/NFB.json
 
+Package: com.dao.speedy
+Version: 0.3
+Architecture: iphoneos-arm64
+Maintainer: alias20 & daodao
+Installed-Size: 420
+Depends: mobilesubstrate, com.opa334.altlist, preferenceloader
+Conflicts: alias20.speedy, com.hk.speedy.cn.rl
+Filename: debs/com.dao.speedy_0.3_iphoneos-arm64.deb
+Size: 33540
+MD5sum: 8ff131570bc84070489388afe162fd6e
+SHA1: 30ebd164d6bbe556c280b3e53972d6e6e3cd274e
+SHA256: 961acefca82f4b3f3145df0394bf9cdf4bc8b726f35de978cd02212bf626a477
+Section: Tweaks
+Description: Gia tốc hoạt hình iOS chi tiết hơn, được biên soạn dựa trên nguồn mở và đã thêm tiếng Trung và Việt Nam
+Author: alias20 & daodao
+Icon: https://romlayvn-0411.github.io/sileojb/icons/icon.png
+Name: Speedy(rootless)
+Sileodepiction: https://romlayvn-0411.github.io/sileojb/sileodepiction/Speedy.json
+
 Package: com.den.igformat
 Version: 1.85-2+debug
 Architecture: iphoneos-arm64

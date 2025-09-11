@@ -1,0 +1,83 @@
+{
+    "minVersion": "0.1",
+    "headerImage": "https://romlayvn-0411.github.io/sileojb/icons/header.png",
+    "tintColor": "#00A8FF",
+    "tabs": [
+        {
+            "tabname": "Details",
+            "views": [
+                {
+                    "class": "DepictionScreenshotsView",
+                    "screenshots": [
+                        {
+                            "url": "https://romlayvn-0411.github.io/sileojb/infodeb/Speedy/screenshot/1.png",
+                            "accessibilityText": "Screenshot"
+                        },{
+                            "url": "https://romlayvn-0411.github.io/sileojb/infodeb/Speedy/screenshot/2.png",
+                            "accessibilityText": "Screenshot"
+                        },{
+                            "url": "https://romlayvn-0411.github.io/sileojb/infodeb/Speedy/screenshot/3.png",
+                            "accessibilityText": "Screenshot"
+                        }
+                    ],
+                    "itemCornerRadius": 8,
+                    "itemSize": "{160, 300}"
+                },
+                {
+                    "markdown": "Một tinh chỉnh thay đổi tốc độ hiệu ứng cho iPhone:\n• Thay đổi tôc độ trên SpringBoard\n• Thay đổi tốc độ của Ứng dụng",
+                    "useSpacing": "true",
+                    "class": "DepictionMarkdownView"
+                },
+                {
+                    "class": "DepictionSpacerView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Information"
+                },
+                {
+                    "class": "DepictionTableTextView",
+                    "title": "Developer",
+                    "text": "Alias20 & DaoDao"
+                },
+                {
+                    "class": "DepictionTableTextView",
+                    "title": "Version",
+                    "text": "0.0.3"
+                },
+                {
+                    "class": "DepictionTableTextView",
+                    "title": "Compatibility",
+                    "text": "iOS 15.x - 17.x"
+                },
+                {
+                    "class": "DepictionTableTextView",
+                    "title": "Section",
+                    "text": "Utilities"
+                },
+                {
+                    "class": "DepictionSpacerView"
+                },
+                {
+                    "class": "DepictionTableButtonView",
+                    "title": "Telegram Support",
+                    "action": "https://t.me/romlayvn",
+                    "openExternal": "true",
+                    "tintColor": "#00A8FF"
+                }
+            ],
+            "class": "DepictionStackView"
+        },
+        {
+            "tabname": "Changelog",
+            "views": [
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "#### Version 0.0.3\n\n Dựa trên mã nguồn mở và được viết lại"
+                }
+            ],
+            "class": "DepictionStackView"
+        }
+    ],
+    "class": "DepictionTabView"
+}
