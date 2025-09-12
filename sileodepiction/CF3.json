@@ -1,0 +1,80 @@
+{
+    "minVersion": "0.1",
+    "headerImage": "https://romlayvn-0411.github.io/sileojb/infodeb/CF3/screenshot/baner.png",
+    "tintColor": "#00A8FF",
+    "tabs": [
+        {
+            "tabname": "Details",
+            "views": [
+                {
+                    "class": "DepictionScreenshotsView",
+                    "screenshots": [
+                        {
+                            "url": "https://romlayvn-0411.github.io/sileojb/infodeb/CF3/screenshot/1.png",
+                            "accessibilityText": "Screenshot"
+                        },{
+                            "url": "https://romlayvn-0411.github.io/sileojb/infodeb/CF3/screenshot/2.png",
+                            "accessibilityText": "Screenshot"
+                        }
+                    ],
+                    "itemCornerRadius": 8,
+                    "itemSize": "{160, 300}"
+                },
+                {
+                    "markdown": "Một tinh chỉnh thay đổi tốc độ và giao diện cho thư mục ứng dụng. Mang phong cách iOS6 hoài cổ",
+                    "useSpacing": "true",
+                    "class": "DepictionMarkdownView"
+                },
+                {
+                    "class": "DepictionSpacerView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Information"
+                },
+                {
+                    "class": "DepictionTableTextView",
+                    "title": "Developer",
+                    "text": "CoolStar & Lizynz & 妖刀"
+                },
+                {
+                    "class": "DepictionTableTextView",
+                    "title": "Version",
+                    "text": "3.0.7"
+                },
+                {
+                    "class": "DepictionTableTextView",
+                    "title": "Compatibility",
+                    "text": "iOS 15.x - 17.x"
+                },
+                {
+                    "class": "DepictionTableTextView",
+                    "title": "Section",
+                    "text": "Tweaks"
+                },
+                {
+                    "class": "DepictionSpacerView"
+                },
+                {
+                    "class": "DepictionTableButtonView",
+                    "title": "Telegram Support",
+                    "action": "https://t.me/romlayvn",
+                    "openExternal": "true",
+                    "tintColor": "#00A8FF"
+                }
+            ],
+            "class": "DepictionStackView"
+        },
+        {
+            "tabname": "Changelog",
+            "views": [
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "#### Version 3.0.7\n\n•Dựa trên mã nguồn mở và được viết lại\n\n•Việt hoá bởi romlayvn"
+                }
+            ],
+            "class": "DepictionStackView"
+        }
+    ],
+    "class": "DepictionTabView"
+}
