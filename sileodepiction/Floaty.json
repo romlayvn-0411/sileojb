@@ -1,0 +1,77 @@
+{
+    "minVersion": "0.1",
+    "headerImage": "https://romlayvn-0411.github.io/sileojb/icons/header.png",
+    "tintColor": "#00A8FF",
+    "tabs": [
+        {
+            "tabname": "Details",
+            "views": [
+                {
+                    "class": "DepictionScreenshotsView",
+                    "screenshots": [
+                        {
+                            "url": "https://romlayvn-0411.github.io/sileojb/infodeb/Floaty/screenshot/1.png",
+                            "accessibilityText": "Screenshot"
+                        }
+                    ],
+                    "itemCornerRadius": 8,
+                    "itemSize": "{160, 300}"
+                },
+                {
+                    "markdown": "Thêm gói tiếng Việt cho tinh chỉnh Floaty",
+                    "useSpacing": "true",
+                    "class": "DepictionMarkdownView"
+                },
+                {
+                    "class": "DepictionSpacerView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Information"
+                },
+                {
+                    "class": "DepictionTableTextView",
+                    "title": "Developer",
+                    "text": "romlayvn"
+                },
+                {
+                    "class": "DepictionTableTextView",
+                    "title": "Version",
+                    "text": "0.0.1"
+                },
+                {
+                    "class": "DepictionTableTextView",
+                    "title": "Compatibility",
+                    "text": "iOS 15.x - 17.x"
+                },
+                {
+                    "class": "DepictionTableTextView",
+                    "title": "Section",
+                    "text": "Tweaks"
+                },
+                {
+                    "class": "DepictionSpacerView"
+                },
+                {
+                    "class": "DepictionTableButtonView",
+                    "title": "Telegram Support",
+                    "action": "https://t.me/romlayvn",
+                    "openExternal": "true",
+                    "tintColor": "#00A8FF"
+                }
+            ],
+            "class": "DepictionStackView"
+        },
+        {
+            "tabname": "Changelog",
+            "views": [
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "#### Version 0.0.1\n\n•Bản phát hành đầu tiên"
+                }
+            ],
+            "class": "DepictionStackView"
+        }
+    ],
+    "class": "DepictionTabView"
+}

@@ -669,6 +669,40 @@ Icon: https://romlayvn-0411.github.io/sileojb/icons/switchtheme3.png
 Name: SwitchTheme-Line
 Sileodepiction: https://romlayvn-0411.github.io/sileojb/sileodepiction/switchtheme.json
 
+Package: com.romlayvn.Floaty
+Version: 0.0.1
+Architecture: iphoneos-arm64
+Maintainer: romlayvn
+Depends: mobilesubstrate, preferenceloader
+Filename: debs/com.romlayvn.Floaty_0.0.1_iphoneos-arm64.deb
+Size: 1720
+MD5sum: 5e7af1c0efe53366414d148e7c53b389
+SHA1: d15f7727be85e19ac2d43b9fc8fd693656f588e4
+SHA256: 9fc02ba7a3f81cb64c2b02b6199a9f28acdba68cbffa54c8f993a95f640b0836
+Section: Tweaks
+Description: Thêm tiếng Việt cho tinh chỉnh Floaty。
+Author: romlayvn
+Icon: https://romlayvn-0411.github.io/sileojb/icons/icon.png
+Name: Gói VH Floaty
+Sileodepiction: https://romlayvn-0411.github.io/sileojb/sileodepiction/Floaty.json
+
+Package: com.romlayvn.Looky
+Version: 0.0.1
+Architecture: iphoneos-arm64
+Maintainer: romlayvn
+Depends: mobilesubstrate, preferenceloader
+Filename: debs/com.romlayvn.Looky_0.0.1_iphoneos-arm64.deb
+Size: 1916
+MD5sum: 0215f94d1d8f5e926108d617f1f67db6
+SHA1: 89b8797ec84670e0a867e429e6869f7ec9e1181f
+SHA256: dc62e927183ff569b8ae46a0be52efb4b090ea01efa1b9cce23dbd8f7a5822a6
+Section: Tweaks
+Description: Thêm tiếng Việt cho tinh chỉnh Looky。
+Author: romlayvn
+Icon: https://romlayvn-0411.github.io/sileojb/icons/icon.png
+Name: Gói VH Looky
+Sileodepiction: https://romlayvn-0411.github.io/sileojb/sileodepiction/Looky.json
+
 Package: com.shtm.neowave16
 Version: 1.0.0
 Architecture: iphoneos-arm64
