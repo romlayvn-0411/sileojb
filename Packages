@@ -512,6 +512,24 @@ Icon: https://mtac.app/repo/assets/com.mtac.vitreux/icon-rounded.png
 Name: Vitreux
 Sileodepiction: https://romlayvn-0411.github.io/sileojb/sileodepiction/vitreux.json
 
+Package: com.mtac.vitreux
+Version: 1.2
+Architecture: iphoneos-arm64
+Maintainer: MTAC
+Installed-Size: 6204
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 15.0)
+Filename: debs/com.mtac.vitreux_1.2_iphoneos-arm64.deb
+Size: 5605256
+MD5sum: e88c3b47f2165287e7d4143a8a935d6c
+SHA1: 0431e292a91c336a34592c93138b00d54021d202
+SHA256: 4ca0917dd642f1d1035db14aff0e07e511c5c154135da1c215cb5182c97bc399
+Section: Tweaks
+Description: A recreation of Liquid Glass
+Author: MTAC
+Icon: https://mtac.app/repo/assets/com.mtac.vitreux/icon-rounded.png
+Name: Vitreux
+Sileodepiction: https://romlayvn-0411.github.io/sileojb/sileodepiction/vitreux.json
+
 Package: com.netskao.pulloverpro
 Version: 2.1.6
 Architecture: iphoneos-arm64
