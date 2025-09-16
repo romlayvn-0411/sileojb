@@ -33,7 +33,7 @@
                     "itemSize": "{160, 300}"
                 },
                 {
-                    "markdown": "Một tinh chỉnh thay đổi giao diện của bạn giống iOS26 Liquid Glass ở một số vị trí:\n\n• Màn Hình Chính\n\n• Màn Hình Khoá\n\n• Thông Báo\n\n• Spotlight\n\n• Thư Viện\n\n• Trung tâm điều khiển\n\n• Tuỳ chỉnh độ mờ và một số vị trí khác.",
+                    "markdown": "A recreation of Liquid Glass",
                     "useSpacing": "true",
                     "class": "DepictionMarkdownView"
                 },
@@ -42,21 +42,21 @@
                 },
                 {
                     "class": "DepictionHeaderView",
-                    "title": "Thông tin tác giả"
+                    "title": "Information"
                 },
                 {
                     "class": "DepictionTableTextView",
-                    "title": "Nhà phát triển",
+                    "title": "Developer",
                     "text": "MTAC"
                 },
                 {
                     "class": "DepictionTableTextView",
-                    "title": "Phiên Bản",
-                    "text": "1.0"
+                    "title": "Version",
+                    "text": "1.3"
                 },
                 {
                     "class": "DepictionTableTextView",
-                    "title": "Hỗ trợ iOS",
+                    "title": "Compatibility",
                     "text": "iOS 15.x - 17.x"
                 },
                 {
@@ -78,12 +78,24 @@
             "class": "DepictionStackView"
         },
         {
-            "tabname": "Nhật Ký",
+            "tabname": "Changelog",
             "views": [
                 {
                     "class": "DepictionMarkdownView",
-                    "markdown":####Version 1.3\n\n Sửa lỗi cho ios 15.x khi bật ControlCenter Efect#### Version 1.2\n\n##Thay đổi\n-Thêm khả năng tương thích với BetterCCBrightness\n-Thêm tùy chọn để điều chỉnh cài đặt mô-đun Trung tâm Điều khiển & làm mờ nền\n-Thêm tùy chọn để tắt thu phóng trên nền Trung tâm Điều khiển\n-Thêm tùy chọn để tô màu các biểu tượng thanh trượt Trung tâm Điều khiển\n-Thêm tùy chọn để sử dụng lớp nền làm mờ với các biểu tượng trong suốt\n-Thêm tùy chọn để thêm hiệu ứng làm mờ cho các biểu tượng thư mục màn hình chính đã đóng\n-Thêm tùy chọn để điều chỉnh kiểu dáng nhãn văn bản trên thông báo\n\n### Sửa lỗi\n-Sửa lỗi hình ảnh khi vuốt hoàn toàn để xóa thông báo\n-Sửa lỗi hiệu ứng nền Dock không hoạt động khi sử dụng Floating Dock\n-Sửa lỗi hiệu ứng kính không được áp dụng cho một số menu phụ của mô-đun Trung tâm Điều khiển#### Version 1.1\n\nKhắc phục Shadow cắt ra khỏi giới hạn trên âm lượng HUD và Các nút bên trong các mô -đun trung tâm điều khiển mở rộng. Thêm vào Hỗ trợ cho các mô -đun trung tâm điều khiển & thiết bị iOS 15.x#### Version 1.0\n\nInitial release"
+                    "markdown": "#### Version 1.3\n\n###Sửa Lỗi\n\n•Đã sửa lỗi sự cố trên iOS 15.x khi bật hiệu ứng trung tâm điều khiển"
                 },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "#### Version 1.2\n\n##Thay đổi\n\n•Thêm khả năng tương thích với BetterCCBrightness\n\n•Đã thêm tùy chọn để điều chỉnh mô-đun Trung tâm điều khiển và cài đặt làm mờ nền\n\nĐã thêm tùy chọn tắt tính năng thu phóng trên nền Trung tâm điều khiển\n\n•Đã thêm tùy chọn tô màu cho các biểu tượng thanh trượt của Trung tâm điều khiển\n\n•Đã thêm tùy chọn để sử dụng lớp lót mờ với các biểu tượng trong suốt\n\n•Đã thêm tùy chọn để thêm hiệu ứng mờ vào các biểu tượng thư mục Homescreen đã đóng\n\n•Đã thêm tùy chọn để điều chỉnh kiểu dáng của nhãn văn bản trên các thông báo\n\n###Sửa Lỗi\n\n•Đã sửa lỗi trực quan khi vuốt hoàn toàn để xóa thông báo\n\n•Đã sửa lỗi các hiệu ứng nền dock không hoạt động khi sử dụng dock nổi\n\n•Hiệu ứng thủy tinh cố định không được áp dụng cho một số menu con mô -đun trung tâm điều khiển"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "#### Version 1.1\n\nSửa lỗi bóng đổ bị cắt ra ngoài giới hạn trên Volume HUD và các nút bên trong các mô-đun Trung tâm Điều khiển mở rộng. Thêm hỗ trợ cho các mô-đun Trung tâm Điều khiển và thiết bị iOS 15.x"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "#### Version 1.0\n\nInitial release"
+                }
             ],
             "class": "DepictionStackView"
         }
