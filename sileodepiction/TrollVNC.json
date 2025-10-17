@@ -1,6 +1,19 @@
 {
-"minVersion":"0.1",
+  "minVersion": "0.1",
   "headerImage": "https://romlayvn-0411.github.io/sileojb/icons/header.png",
+  
+  "deviceCompatibility": {
+    "enabled": true,
+    "supportedIOS": ["15.0", "16.5"],
+    "supportedArchitectures": ["arm64", "arm64e"],
+    "unsupportedDevices": ["iPhone6,1", "iPhone6,2", "iPhone7,1", "iPhone7,2"],
+    "compatibilityCheck": {
+      "autoDetect": true,
+      "showWarning": true,
+      "warningMessage": "⚠️ Kiểm tra tương thích thiết bị"
+    }
+  },
+
   "tabs": [
     {
       "tabname": "Giới thiệu",
@@ -8,22 +21,44 @@
         {
           "class": "DepictionHeaderView",
           "title": "TrollVNC\nĐiều khiển thiết bị iphone trên máy tính"
-        }, 
+        },
         {
-                    "class": "DepictionScreenshotsView",
-                    "screenshots": [
-                        {
-                            "url": "https://romlayvn-0411.github.io/sileojb/infodeb/TrollVNC/screenshot/trollvnc.png",
-                            "accessibilityText": "Screenshot"
-                        }
-                    ],
-                    "itemCornerRadius": 8,
-                    "itemSize": "{300, 160}"
-                },
+          "class": "DepictionScreenshotsView",
+          "screenshots": [
+            {
+              "url": "https://romlayvn-0411.github.io/sileojb/infodeb/TrollVNC/screenshot/trollvnc.png",
+              "accessibilityText": "Screenshot"
+            }
+          ],
+          "itemCornerRadius": 8,
+          "itemSize": "{300, 160}"
+        },
         {
           "class": "DepictionSpacerView",
           "spacing": 20
         },
+        
+        /* THÊM PHẦN KIỂM TRA TƯƠNG THÍCH THIẾT BỊ */
+        {
+          "class": "DepictionHeaderView",
+          "title": "🔍 Kiểm tra tương thích"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "**Thiết bị của bạn:** *Đang kiểm tra...*\n\n**iOS Version:** *Đang kiểm tra...*\n\n**Trạng thái:** ✅ **Tương thích** / ❌ **Không tương thích**"
+        },
+        {
+          "class": "DepictionTableButtonView",
+          "title": "Kiểm tra ngay",
+          "action": "checkCompatibility",
+          "tintColor": "#007AFF"
+        },
+        {
+          "class": "DepictionSpacerView",
+          "spacing": 15
+        },
+        /* KẾT THÚC PHẦN KIỂM TRA */
+
         {
           "class": "DepictionMarkdownView",
           "markdown": "TrollVNC là một máy chủ VNC cho các thiết bị iOS, cho phép truy cập từ xa và điều khiển màn hình thiết bị"
@@ -60,6 +95,16 @@
           "class": "DepictionTableTextView",
           "title": "Khả năng tương thích",
           "text": "iOS 15.0 đến 16.5"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Kiến trúc hỗ trợ",
+          "text": "arm64, arm64e"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Loại jailbreak",
+          "text": "RootFull, RootLess, RootHide"
         }
       ],
       "class": "DepictionStackView"
@@ -70,6 +115,14 @@
         {
           "class": "DepictionMarkdownView",
           "markdown": "[**Hỗ trợ Telegram**](https://t.me/romlayvn) - Hỗ trợ cập nhật và giải đáp thắc mắc."
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Thông tin tương thích"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "### 📱 Thiết bị được hỗ trợ:\n- iPhone 6s trở lên\n- iPad Air 2 trở lên\n- iPod touch 7th\n\n### ⚠️ Lưu ý quan trọng:\n- Chỉ hỗ trợ iOS 15.0 - 16.5\n- Yêu cầu jailbreak hoặc TrollStore\n- Không hỗ trợ thiết bị A7/A8 cũ"
         },
         {
           "class": "DepictionHeaderView",
@@ -93,8 +146,12 @@
       "tabname": "Nhật ký",
       "views": [
         {
+          "class": "DepictionHeaderView",
+          "title": "Lịch sử cập nhật"
+        },
+        {
           "class": "DepictionMarkdownView",
-          "markdown": "### Phiên bản 2.0\n- Hỗ trợ Reverse VNC\n\n### Phiên bản 1.9\n- Hỗ trợ clipboard (Ultravnc)\n- Định danh gói đã thay đổi cho ứng dụng độc lập của Trollvnc, bạn có thể cần phải gỡ cài đặt các ứng dụng cũ.\n\n### Phiên bản 1.8\n- Hỗ trợ iPad\n\n### Phiên bản 1.7\n- Hỗ trợ kích hoạt tự động\n- Tên Bonjour ngẫu nhiên\n\n### Phiên bản 1.6\n- Hỗ trợ khám phá tự động thông qua Bonjour\n\n### Phiên bản 1.5\n- Hỗ trợ TrollStore\n\n### Phiên bản 1.4\n- Sửa lỗi\n\n### Phiên bản 1.3\n- Sửa lỗi\n\n### Phiên bản 1.2\n- Sửa lỗi\n\n### Phiên bản 1.1\n- Phát hành bản đầu tiên\n- Hỗ trợ RootFull\n- Hỗ trợ RootLess\n- Hỗ trợ RootHide"
+          "markdown": "### Phiên bản 2.0\n- Hỗ trợ Reverse VNC\n- **Cải thiện nhận diện thiết bị**\n\n### Phiên bản 1.9\n- Hỗ trợ clipboard (Ultravnc)\n- Định danh gói đã thay đổi cho ứng dụng độc lập của Trollvnc, bạn có thể cần phải gỡ cài đặt các ứng dụng cũ.\n\n### Phiên bản 1.8\n- Hỗ trợ iPad\n\n### Phiên bản 1.7\n- Hỗ trợ kích hoạt tự động\n- Tên Bonjour ngẫu nhiên\n\n### Phiên bản 1.6\n- Hỗ trợ khám phá tự động thông qua Bonjour\n\n### Phiên bản 1.5\n- Hỗ trợ TrollStore\n\n### Phiên bản 1.4\n- Sửa lỗi tương thích thiết bị\n\n### Phiên bản 1.3\n- Sửa lỗi\n\n### Phiên bản 1.2\n- Sửa lỗi\n\n### Phiên bản 1.1\n- Phát hành bản đầu tiên\n- Hỗ trợ RootFull\n- Hỗ trợ RootLess\n- Hỗ trợ RootHide"
         },
         {
           "class": "DepictionLabelView",
@@ -102,6 +159,28 @@
           "textColor": "#999999",
           "fontSize": 10,
           "alignment": 1
+        }
+      ],
+      "class": "DepictionStackView"
+    },
+    
+    /* THÊM TAB MỚI CHO THÔNG TIN TƯƠNG THÍCH */
+    {
+      "tabname": "Tương thích",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "📋 Thông tin tương thích"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "## Thiết bị được hỗ trợ đầy đủ\n\n### iPhone\n- iPhone 6s/6s Plus trở lên\n- iPhone SE (thế hệ 1) trở lên\n- Tất cả iPhone có chip A9 trở lên\n\n### iPad\n- iPad Air 2 trở lên\n- iPad Mini 4 trở lên\n- iPad Pro tất cả thế hệ\n\n### iPod\n- iPod touch (thế hệ 7)\n\n## Yêu cầu hệ thống\n- **iOS:** 15.0 - 16.5.1\n- **Kiến trúc:** arm64, arm64e\n- **Jailbreak:** RootFull/RootLess/RootHide\n- **Alternative:** TrollStore\n\n## Thiết bị không hỗ trợ\n- iPhone 6 trở xuống\n- iPad Air 1\n- iPad Mini 3 trở xuống\n- Thiết bị 32-bit\n- iOS < 15.0 hoặc > 16.5.1"
+        },
+        {
+          "class": "DepictionTableButtonView",
+          "title": "Kiểm tra tương thích nâng cao",
+          "action": "advancedCompatibilityCheck",
+          "tintColor": "#FF9500"
         }
       ],
       "class": "DepictionStackView"
